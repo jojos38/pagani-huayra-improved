@@ -1,0 +1,78 @@
+{
+"tire_R_285_35_17_pag": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Michelin Pilot SS Cup 2",
+        "value":300,
+    },
+    "slotType" : "pagani_R_19x12",
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        ["pag_t_R", ["wheel_RR","tire_RR"], [], {"pos":{"x":-0.453, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":0}, "scale":{"x":1, "y":1, "z":1}}],
+        ["pag_t_R", ["wheel_RL","tire_RL"], [], {"pos":{"x": 0.505, "y":0.0, "z":0.0}, "rot":{"x":0, "y":0, "z":0}, "scale":{"x":1, "y":1, "z":1}}],
+    ],
+    "variables": [
+        ["name", "type", "unit", "category", "default", "min", "max", "title", "description"],
+        ["$tirepressure_R", "range", "psi", "Wheels", 28, 0, 50, "Rear Tire Pressure", "Relative to atmospheric pressure"],
+    ],
+    "pressureWheels": [
+        ["name","hubGroup","group","node1:","node2:","nodeS","nodeArm:","wheelDir"],
+        {"disableMeshBreaking":false,"disableHubMeshBreaking":false},
+        {"hasTire":true},
+        {"enableTireReinfBeams":false},
+        {"enableTireLbeams":true},
+        {"enableTireSideReinfBeams":false},
+        {"enableTreadReinfBeams":true},
+        {"enableTirePeripheryReinfBeams":true},
+
+        //general settings
+        {"radius":0.35},
+        {"tireWidth":0.355},
+
+        //tire options
+        {"wheelSideBeamSpring":100,"wheelSideBeamDamp":20},
+        {"wheelSideBeamSpringExpansion":421000,"wheelSideBeamDampExpansion":20},
+        {"wheelSideTransitionZone":0.1,"wheelSideBeamPrecompression":1.0},
+
+        {"wheelReinfBeamSpring":45000,"wheelReinfBeamDamp":70},
+        {"wheelReinfBeamPrecompression":1.0},
+
+        {"wheelTreadBeamSpring":301000,"wheelTreadBeamDamp":35},
+        {"wheelTreadBeamPrecompression":1.0},
+
+        {"wheelTreadReinfBeamSpring":101000,"wheelTreadReinfBeamDamp":35},
+        {"wheelTreadReinfBeamPrecompression":1.0},
+
+        {"wheelPeripheryBeamSpring":181000,"wheelPeripheryBeamDamp":20},
+        {"wheelPeripheryBeamPrecompression":1.0},
+
+        //general tire values
+        {"nodeWeight":0.18},
+        {"nodeMaterial":"|NM_RUBBER"},
+        {"frictionCoef":1.2},
+        {"triangleCollision":false},
+        {"pressurePSI":"$tirepressure_R"},
+
+        {"dragCoef":5},
+        {"treadCoef":0.5},
+
+        //groundmodel friction multipliers
+        {"frictionCoef":1.185},
+        {"slidingFrictionCoef":1.185},
+        {"treadCoef":0.2},
+
+        //advanced friction values
+        {"noLoadCoef":1.72},
+        {"loadSensitivitySlope":0.00017}
+        {"fullLoadCoef":0.69},
+        {"softnessCoef":1},
+
+        //deform values
+        {"wheelSideBeamDeform":18500,"wheelSideBeamStrength":25000},
+        {"wheelReinfBeamDeform":101000,"wheelReinfBeamStrength":101000},
+        {"wheelTreadBeamDeform":14000,"wheelTreadBeamStrength":18000},
+        {"wheelTreadReinfBeamDeform":14000,"wheelTreadReinfBeamStrength":18000},
+        {"wheelPeripheryBeamDeform":101000,"wheelPeripheryBeamStrength":101000},
+    ],
+},
+}
