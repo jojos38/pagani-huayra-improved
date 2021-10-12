@@ -5,7 +5,7 @@
         "name":"Muffler",
         "value":2500,
     }
-    "slotType" : "pag_exhaust",
+    //"slotType" : "pag_exhaust",
     "flexbodies": [
          ["mesh", "[group]:", "nonFlexMaterials"],
          ["pag_exhaust_L", ["sbr_exhaust"]],

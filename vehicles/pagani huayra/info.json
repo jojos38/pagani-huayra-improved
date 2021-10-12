@@ -1,13 +1,13 @@
 {
     "Name":"Huayra",
     "Brand":"Pagani",
-  "Author":"BeamNG",
+  "Author":"Gianpiero, AbdullahBemath27, jojos38",
   "Country":"Italy",
     "Type":"Car",
   "Body Style":"Coupe",
     "Years":{"min":2013, "max":2020},
     "Derby Class":"Mid-Size Car",
-    "default_pc":"350",
+    "default_pc":"base",
     "default_color":"Rosso Scarlatto",
     "colors":{
         "Bianco Perla": "1 1 1 1.3",

@@ -35,23 +35,23 @@
             "lightAttenuation":{"x":0, "y":1, "z":1}
             "lightCastShadows":true
             "flareName":"vehicleHeadLightFlare"
-            "flareScale":0.3
+            "flareScale":0.05
             "cookieName":"art/special/BNG_light_cookie_headlight.png"
             "texSize":512
             "shadowSoftness":0.5
         }
         //low beams angled right slightly to avoid blinding oncoming traffic
-        ["lowbeam",  "SPOTLIGHT", "fa2rr", "fa2r", "fa1rr", {"x":20,"y":0,"z":-20},  {"x":0,"y":0,"z":0}, {"x":0,"y":0,"z":0}, 0, 0, 0, 1, {"baseTranslation":{"x":0.23,"y":0.4,"z":-0.03},                                         "deformGroup":"pag_taillight_R"}],
-        ["lowbeam",  "SPOTLIGHT", "fa2ll", "fa2l", "fa1ll", {"x":160,"y":20,"z":25}, {"x":0,"y":0,"z":0}, {"x":0,"y":0,"z":0}, 0, 0, 0, 1, {"baseTranslation":{"x":0.23,"y":0.4,"z":0.03}, "lightOuterAngle":75,                   "deformGroup":"hatch_headlightglass_L_break"}],
+        //["lowbeam",  "SPOTLIGHT", "fa2rr", "fa2r", "fa1rr", {"x":20,"y":0,"z":-20},  {"x":0,"y":0,"z":0}, {"x":0,"y":0,"z":0}, 0, 0, 0, 1, {"baseTranslation":{"x":0.23,"y":0.4,"z":-0.03},                                         "deformGroup":"pag_taillight_R"}],
+        //["lowbeam",  "SPOTLIGHT", "fa2ll", "fa2l", "fa1ll", {"x":160,"y":20,"z":25}, {"x":0,"y":0,"z":0}, {"x":0,"y":0,"z":0}, 0, 0, 0, 1, {"baseTranslation":{"x":0.23,"y":0.4,"z":0.03}, "lightOuterAngle":75,                   "deformGroup":"hatch_headlightglass_L_break"}],
         //high beams
-		["highbeam",  "SPOTLIGHT", "fa2rr", "fa2r", "fa1rr", {"x":20,"y":0,"z":-20},  {"x":0,"y":0,"z":0}, {"x":0,"y":0,"z":0}, 0, 0, 0, 1, {"baseTranslation":{"x":0.23,"y":0.4,"z":-0.03},                                         "deformGroup":"pag_taillight_R"}],
-        ["highbeam",  "SPOTLIGHT", "fa2ll", "fa2l", "fa1ll", {"x":160,"y":20,"z":25}, {"x":0,"y":0,"z":0}, {"x":0,"y":0,"z":0}, 0, 0, 0, 1, {"baseTranslation":{"x":0.23,"y":0.4,"z":0.03}, "lightOuterAngle":75,                   "deformGroup":"hatch_headlightglass_L_break"}],
-        ["highbeam", "SPOTLIGHT", "fa2rr", "fa2r", "fa1rr", {"x":20,"y":0,"z":-20},  {"x":0,"y":0,"z":0}, {"x":0,"y":0,"z":0}, 0, 0, 0, 1, {"baseTranslation":{"x":0.6,"y":0.4,"z":-0.03}, "lightRange":100,"lightBrightness":0.4, "deformGroup":"pag_taillight_R", "flareScale":0.35}],
-        ["highbeam", "SPOTLIGHT", "fa2ll", "fa2l", "fa1ll", {"x":160,"y":0,"z":20},  {"x":0,"y":0,"z":0}, {"x":0,"y":0,"z":0}, 0, 0, 0, 1, {"baseTranslation":{"x":0.6,"y":0.4,"z":0.03}, "lightRange":100,"lightBrightness":0.4, "deformGroup":"hatch_headlightglass_L_break", "flareScale":0.35}],
+		//["highbeam",  "SPOTLIGHT", "fa2rr", "fa2r", "fa1rr", {"x":20,"y":0,"z":-20},  {"x":0,"y":0,"z":0}, {"x":0,"y":0,"z":0}, 0, 0, 0, 1, {"baseTranslation":{"x":0.23,"y":0.4,"z":-0.03},                                         "deformGroup":"pag_taillight_R"}],
+        //["highbeam",  "SPOTLIGHT", "fa2ll", "fa2l", "fa1ll", {"x":160,"y":20,"z":25}, {"x":0,"y":0,"z":0}, {"x":0,"y":0,"z":0}, 0, 0, 0, 1, {"baseTranslation":{"x":0.23,"y":0.4,"z":0.03}, "lightOuterAngle":75,                   "deformGroup":"hatch_headlightglass_L_break"}],
+        //["highbeam", "SPOTLIGHT", "fa2rr", "fa2r", "fa1rr", {"x":20,"y":0,"z":-20},  {"x":0,"y":0,"z":0}, {"x":0,"y":0,"z":0}, 0, 0, 0, 1, {"baseTranslation":{"x":0.6,"y":0.4,"z":-0.03}, "lightRange":100,"lightBrightness":0.4, "deformGroup":"pag_taillight_R", "flareScale":0.35}],
+        //["highbeam", "SPOTLIGHT", "fa2ll", "fa2l", "fa1ll", {"x":160,"y":0,"z":20},  {"x":0,"y":0,"z":0}, {"x":0,"y":0,"z":0}, 0, 0, 0, 1, {"baseTranslation":{"x":0.6,"y":0.4,"z":0.03}, "lightRange":100,"lightBrightness":0.4, "deformGroup":"hatch_headlightglass_L_break", "flareScale":0.35}],
 		
         //dim parking lights
-        ["parking",  "SPOTLIGHT", "fa2rr", "fa2r", "fa1rr", {"x":20,"y":0,"z":-20},  {"x":0,"y":0,"z":0}, {"x":0,"y":0,"z":0}, 0, 0, 0, 1, {"baseTranslation":{"x":0.23,"y":0.4,"z":-0.03}, "lightRange":40,"lightBrightness":0.1,  "deformGroup":"hatch_headlightglass_R_break"}],
-        ["parking",  "SPOTLIGHT", "fa2ll", "fa2l", "fa1ll", {"x":160,"y":0,"z":20},  {"x":0,"y":0,"z":0}, {"x":0,"y":0,"z":0}, 0, 0, 0, 1, {"baseTranslation":{"x":0.23,"y":0.4,"z":0.03}, "lightRange":40,"lightBrightness":0.1,  "deformGroup":"hatch_headlightglass_L_break"}],
+        //["parking",  "SPOTLIGHT", "fa2rr", "fa2r", "fa1rr", {"x":20,"y":0,"z":-20},  {"x":0,"y":0,"z":0}, {"x":0,"y":0,"z":0}, 0, 0, 0, 1, {"baseTranslation":{"x":0.23,"y":0.4,"z":-0.03}, "lightRange":40,"lightBrightness":0.1,  "deformGroup":"hatch_headlightglass_R_break"}],
+        //["parking",  "SPOTLIGHT", "fa2ll", "fa2l", "fa1ll", {"x":160,"y":0,"z":20},  {"x":0,"y":0,"z":0}, {"x":0,"y":0,"z":0}, 0, 0, 0, 1, {"baseTranslation":{"x":0.23,"y":0.4,"z":0.03}, "lightRange":40,"lightBrightness":0.1,  "deformGroup":"hatch_headlightglass_L_break"}],
         {
             "lightInnerAngle":0
             "lightOuterAngle":150
@@ -61,11 +61,11 @@
             "lightAttenuation":{"x":0, "y":1, "z":1}
             "lightCastShadows":false
             "flareName":"vehicleBrakeLightFlare"
-            "flareScale":0.3
+            "flareScale":0.05
         },
         
-        ["parking",     "SPOTLIGHT", "fa1rr", "fa3r", "fa2rr", {"x":180,"y":0,"z":0}, {"x":0,"y":0,"z":0}, {"x":0,"y":0,"z":0}, 0, 0, 0, 1, {"baseTranslation":{"x":0.35, "y":0.6, "z":0}, "deformGroup":"hatch_signal_R_break"}],
-        ["parking",     "SPOTLIGHT", "fa1ll", "fa3l", "fa2ll", {"x":0,"y":0,"z":0},   {"x":0,"y":0,"z":0}, {"x":0,"y":0,"z":0}, 0, 0, 0, 1, {"baseTranslation":{"x":0.35, "y":0.6, "z":0}, "deformGroup":"hatch_signal_L_break"}],
+        //["parking",     "SPOTLIGHT", "fa1rr", "fa3r", "fa2rr", {"x":180,"y":0,"z":0}, {"x":0,"y":0,"z":0}, {"x":0,"y":0,"z":0}, 0, 0, 0, 1, {"baseTranslation":{"x":0.35, "y":0.6, "z":0}, "deformGroup":"hatch_signal_R_break"}],
+        //["parking",     "SPOTLIGHT", "fa1ll", "fa3l", "fa2ll", {"x":0,"y":0,"z":0},   {"x":0,"y":0,"z":0}, {"x":0,"y":0,"z":0}, 0, 0, 0, 1, {"baseTranslation":{"x":0.35, "y":0.6, "z":0}, "deformGroup":"hatch_signal_L_break"}],
     ],
 
     "glowMap":{

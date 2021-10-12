@@ -103,45 +103,54 @@
 		"soundConfigExhaust": "soundConfigExhaust",
     },
     "soundConfig": {
-        "sampleName": "huayra",
+        "sampleName": "huayra_engine",
         "mainGain": -5,
         "maxLoadMix": 0.6,
         "minLoadMix": 0,
-        "onLoadGain":0.8,
-        //"onLoadGain":1,
-        //"offLoadGain":0.3,
-        "offLoadGain":0.2,
-        "eqLowGain": -2,
-        "eqLowFreq": 150,
-        //"eqLowWidth": 0,
-        "eqHighGain": -4,
-        "eqHighFreq": 3000,
-        //"eqHighWidth": 0,
-        //"lowCutFreq":90,
-        //"eqFundamentalGain": 10,
-    },
-	"soundConfigExhaust": {
-        "sampleName": "V8_flat_2_exhaust",
-
-        "eqFundamentalGain":15,
-		//"offLoadGain":0.4,
-		"offLoadGain":0.2,
-		"muffling":0,
-		"highShelfGain":13,
-		"eqLowGain":5.2,
-		"fundamentalFrequencyCylinderCount":6,
-		"eqHighFreq":500,
-		"eqHighWidth":0,
-		"onLoadGain":0.4,
-		//"onLoadGain":0.8,
-		"eqLowFreq":500,
-		"eqHighGain":5,
-		"eqLowWidth":0,
-		"lowShelfGain":17,
-		"highShelfFreq":1000,
-		"mainGain":-10,
-		"lowShelfFreq":580,
+        "onLoadGain":1,
+        "offLoadGain":0.20,
 		
+		"eqLowGain": 11,
+        "eqLowFreq": 120,
+        "eqLowWidth": 0.3,
+
+        "eqHighGain": 18,
+        "eqHighFreq": 12000,
+        "eqHighWidth": 0.3,
+
+        "lowShelfGain":10,
+        "lowShelfFreq":120,
+
+        "highShelfGain":10,
+        "highShelfFreq":11000,
+
+        "fundamentalFrequencyCylinderCount":12,
+        "eqFundamentalGain": 0
+    },
+    "soundConfigExhaust": {
+        "sampleName": "huayra_exhaust",
+        "mainGain": 10,
+        "maxLoadMix": 0.02,
+        "minLoadMix": 0,
+        "onLoadGain":1,
+        "offLoadGain":0.02,
+		
+		"eqLowGain": 12,
+        "eqLowFreq": 140,
+        "eqLowWidth": 0.3,
+
+        "eqHighGain": 25,
+        "eqHighFreq": 12000,
+        "eqHighWidth": 0.3,
+
+        "lowShelfGain":10,
+        "lowShelfFreq":120,
+
+        "highShelfGain":10,
+        "highShelfFreq":11000,
+
+        "fundamentalFrequencyCylinderCount":12,
+        "eqFundamentalGain": 0
     },
     "vehicleController": {
         "clutchLaunchStartRPM":1100,
@@ -271,12 +280,12 @@
     "turbocharger": {
 		"hissLoopEvent": "event:>Vehicle>Forced_Induction>Turbo_03>turbo_hiss_race",
 		"whineLoopEvent":"event:>Vehicle>Forced_Induction>Turbo_03>turbo_spin_race",
-		"whinePitchPer10kRPM":0.08,
-		"whineVolumePer10kRPM":35.5,
-		"hissVolumePerPSI":0.25,
-		"bovEnabled" : true,
-		"bovSoundFileName":"event:>Vehicle>Forced_Induction>Turbo_03>turbo_bov_race",
-		"bovSoundVolumeCoef": 800,
+		"whinePitchPer10kRPM": 0.08,
+		"whineVolumePer10kRPM": 10.0,
+		"hissVolumePerPSI": 0.50,
+		"bovEnabled": true,
+		"bovSoundFileName": "event:>Vehicle>Forced_Induction>Turbo_03>turbo_bov_race",
+		"bovSoundVolumeCoef": 15.0,
 		"bovOpenThreshold": 0.05,
 		"bovOpenChangeThreshold": 0.5,
 		//"flutterSoundFileName":"event:>Vehicle>Forced_Induction>Turbo_02>turbo_bov",
@@ -337,7 +346,7 @@
     },
     "flexbodies": [
          ["mesh", "[group]:", "nonFlexMaterials"],
-         ["pag_intake_TT", ["pag_engine"]],
+         //["pag_intake_TT", ["pag_engine"]],
          ["pag_exhaust_TT", ["pag_twinturbo","pag_exhaust"]],
     ],
     "nodes": [

@@ -57,7 +57,6 @@
           {"breakGroup":"mirror_R"},
          
           ["mi5r","h23"],
-          ["mi5r","h23"],
 
           ["mi4r","h18"],
           ["mi5r","h18"],
@@ -65,7 +64,6 @@
 
           {"breakGroupType":1},
           {"breakGroup":"mirror_R"},
-          ["mi1r","h18"],
           ["mi1r","h18"],
           ["mi2r","h23"],
           ["mi3r","h23"],
@@ -153,7 +151,7 @@
 
           ["mi4l","h35"],
           ["mi5l","h35"],
-          ["mi6l","h35"],
+          //["mi6l","h35"],
 		  //own strength
 		  
 

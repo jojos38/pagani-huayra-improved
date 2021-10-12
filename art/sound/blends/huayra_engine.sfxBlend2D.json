@@ -1,0 +1,40 @@
+{
+    "header" : {
+        "version" : 1
+    },
+    "eventName" : "event:>Engine>default",
+    "samples" : 
+    [
+        [
+            ["art/sound/engine/huayra/Engine_00786.wav", 786],
+            ["art/sound/engine/huayra/Engine_01487.wav", 1487],			
+            ["art/sound/engine/huayra/Engine_01692.wav", 1692],
+            ["art/sound/engine/huayra/Engine_01985.wav", 1985],
+            ["art/sound/engine/huayra/Engine_02190.wav", 2190],
+            ["art/sound/engine/huayra/Engine_02483.wav", 2483],
+            ["art/sound/engine/huayra/Engine_02988.wav", 2988],
+            ["art/sound/engine/huayra/Engine_03483.wav", 3483],
+            ["art/sound/engine/huayra/Engine_03981.wav", 3981],
+            ["art/sound/engine/huayra/Engine_04482.wav", 4482],
+            ["art/sound/engine/huayra/Engine_04992.wav", 4992],
+            ["art/sound/engine/huayra/Engine_05486.wav", 5486],
+            ["art/sound/engine/huayra/Engine_05878.wav", 5878]
+        ]
+        ,
+        [
+            ["art/sound/engine/huayra/Engine_00786.wav", 786],
+            ["art/sound/engine/huayra/Engine_01487.wav", 1487],			
+            ["art/sound/engine/huayra/Engine_01692.wav", 1692],
+            ["art/sound/engine/huayra/Engine_01985.wav", 1985],
+            ["art/sound/engine/huayra/Engine_02190.wav", 2190],
+            ["art/sound/engine/huayra/Engine_02483.wav", 2483],
+            ["art/sound/engine/huayra/Engine_02988.wav", 2988],
+            ["art/sound/engine/huayra/Engine_03483.wav", 3483],
+            ["art/sound/engine/huayra/Engine_03981.wav", 3981],
+            ["art/sound/engine/huayra/Engine_04482.wav", 4482],
+            ["art/sound/engine/huayra/Engine_04992.wav", 4992],
+            ["art/sound/engine/huayra/Engine_05486.wav", 5486],
+            ["art/sound/engine/huayra/Engine_05878.wav", 5878]
+        ]
+    ]
+}

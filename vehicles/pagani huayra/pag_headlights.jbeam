@@ -26,7 +26,7 @@
             "lightAttenuation":{"x":0, "y":1, "z":1}
             "lightCastShadows":true
             "flareName":"vehicleHeadLightFlare"
-            "flareScale":0.4
+            "flareScale":0.05
             "cookieName":"art/special/BNG_light_cookie_headlight.png"
             "texSize":512
             "shadowSoftness":0.5
@@ -190,7 +190,7 @@
             "lightAttenuation":{"x":0, "y":1, "z":1}
             "lightCastShadows":true
             "flareName":"vehicleHeadLightFlare"
-            "flareScale":0.4
+            "flareScale":0.05
             "cookieName":"art/special/BNG_light_cookie_headlight.png"
             "texSize":512
             "shadowSoftness":0.5

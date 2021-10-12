@@ -1,0 +1,92 @@
+{
+  "pag_glass": {
+    "name": "pag_glass",
+    "mapTo": "pag_glass",
+    "class": "Material",
+    "persistentId": "6ad2380a-c84c-4dba-bb1e-24310d5e21bf",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.588235021,
+          1,
+          1,
+          1
+        ],
+        "baseColorMap": "/vehicles/pagani huayra/glass_COLOR.dds",
+        "clearCoatFactor": 1,
+        "clearCoatRoughnessFactor": 0,
+        "diffuseMapUseUV": 1,
+        "normalMap": "vehicles/common/null_n.dds",
+        "opacityMap": "/vehicles/pagani huayra/glass_COLOR.dds",
+        "pixelSpecular": true,
+        "reflectivityMap": "vehicles/common/glass_base.dds",
+        "roughnessFactor": 0.445299804
+      },
+      {
+        "baseColorFactor": [
+          0.5,
+          0.5,
+          0.5,
+          0.75
+        ],
+        "baseColorMap": "/vehicles/pagani huayra/glass_COLOR.dds"
+      },
+      {},
+      {}
+    ],
+    "alphaRef": 0,
+    "castShadows": false,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "translucent": true,
+    "translucentBlendOp": "PreMulAlpha",
+    "version": 1.5
+  },
+  "pag_glass_black": {
+    "name": "pag_glass_black",
+    "mapTo": "pag_glass_black",
+    "class": "Material",
+    "persistentId": "104714b2-708e-4ecc-b892-fff7c7841169",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          1,
+          1.50196099,
+          1.50196099,
+          1
+        ],
+        "baseColorMap": "/vehicles/pagani huayra/glass_black.dds",
+        "clearCoatRoughnessFactor": 0,
+        "detailMapUseUV": 1,
+        "metallicFactor": 1,
+        "opacityMap": "/vehicles/pagani huayra/glass_COLOR.dds",
+        "pixelSpecular": true,
+        "reflectivityMap": "vehicles/common/glass_base.dds",
+        "roughnessFactor": 0
+      },
+      {
+        "baseColorFactor": [
+          1,
+          1,
+          1,
+          8.05882359
+        ],
+        "baseColorMap": "/vehicles/pagani huayra/glass_black.dds",
+        "clearCoatFactor": 1,
+        "clearCoatRoughnessFactor": 0,
+        "opacityFactor": 0.949999988
+      },
+      {},
+      {}
+    ],
+    "activeLayers": 2,
+    "alphaRef": 0,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "translucent": true,
+    "translucentBlendOp": "PreMulAlpha",
+    "version": 1.5
+  }
+}

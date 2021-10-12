@@ -8,7 +8,7 @@
     "slotType" : "pag_fueltank",
     "flexbodies": [
          ["mesh", "[group]:", "nonFlexMaterials"],
-         ["pag_fueltank", ["pag_chassis","pag_shocktop_R","pag_uppermounts_R","pag_lowermounts_R"]],
+         //["pag_fueltank", ["pag_chassis","pag_shocktop_R","pag_uppermounts_R","pag_lowermounts_R"]],
     ],
     "variables": [
         ["name", "type", "unit", "category", "default", "min", "max", "title", "description"]
@@ -61,37 +61,37 @@
           {"beamDeform":3360,"beamStrength":42720},
           
           //connect fuel particles to tank
-          ["ft1","rc1"],
+          //["ft1","rc1"],
           ["ft1","c4l"],
           ["ft1","c4r"],
           
-          ["ft2","rc1"],
+          //["ft2","rc1"],
           ["ft2","c4l"],
           ["ft2","c4r"],
           
-          ["ft3","rc1"],
+          //["ft3","rc1"],
           ["ft3","c4l"],
           ["ft3","c4r"],
 
           //{"breakGroup":"fueltank"},
-          ["ft1l","rcl"],
+          //["ft1l","rcl"],
           ["ft1l","c4l"],
           ["ft1l","c4r"],
-          ["ft1r","rcl"],
+          //["ft1r","rcl"],
           ["ft1r","c4l"],
           ["ft1r","c4r"],
-          ["ft2l","rcl"],
+          //["ft2l","rcl"],
           ["ft2l","c4l"],
           ["ft2l","c4r"],
 
-          ["ft3l","rcl"],
+          //["ft3l","rcl"],
           ["ft3l","c4l"],
           ["ft3l","c4r"],
 
-          ["ft3r","rcl"],
+          //["ft3r","rcl"],
           ["ft3r","c4l"],
           ["ft3r","c4r"],
-          ["ft2r","rcl"],
+          //["ft2r","rcl"],
           ["ft2r","c4l"],
           ["ft2r","c4r"],
 

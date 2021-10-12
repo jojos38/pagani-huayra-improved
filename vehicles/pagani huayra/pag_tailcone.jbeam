@@ -16,9 +16,9 @@
          ["pag_tailcone", ["pag_tailcone"]],
 
          {"deformGroup":"taillight_L_break", "deformMaterialBase":"pag_lights", "deformMaterialDamaged":"pag_lights_dmg"},
-         ["pag_taillight_L", ["pag_tailcone"],[]{"deformSound":"GlassBreakSound1", "deformVolume":0.5}],
+         //["pag_taillight_L", ["pag_tailcone"],[]{"deformSound":"GlassBreakSound1", "deformVolume":0.5}],
          {"deformGroup":"taillight_R_break", "deformMaterialBase":"pag_lights", "deformMaterialDamaged":"pag_lights_dmg"},
-         ["pag_taillight_R", ["pag_tailcone"],[]{"deformSound":"GlassBreakSound2", "deformVolume":0.5}],
+         //["pag_taillight_R", ["pag_tailcone"],[]{"deformSound":"GlassBreakSound2", "deformVolume":0.5}],
          {"deformGroup":""},
     ],
     "props": [
@@ -284,10 +284,10 @@
           {"beamDeform":7000,"beamStrength":23140},
           {"breakGroup":"tailcone_R"},
           {"deformGroup":"taillight_R_break", "deformationTriggerRatio":0.3},
-          ["t6rr","q10r"],
+          //["t6rr","q10r"],
           
-          ["t5rr","q12r"],
-          ["t5rr","q13r"],
+          //["t5rr","q12r"],
+          //["t5rr","q13r"],
             
             
             ["t3rr", "c5"],
@@ -297,10 +297,10 @@
 
           {"breakGroup":"tailcone_L"},
           {"deformGroup":"taillight_L_break"},
-          ["t6ll","q10l"],
+          //["t6ll","q10l"],
           
-          ["t5ll","q12l"],
-          ["t5ll","q13l"],
+          //["t5ll","q12l"],
+          //["t5ll","q13l"],
             
             
             ["t3ll", "c9"],
@@ -323,11 +323,11 @@
 			["t5", "c6"],
 
           {"beamSpring":360800,"beamDamp":154.8},
-          ["t5r","q13r"],
-          ["t5l","q13l"],
-          ["t5r","r3r"],
-          ["t5","r3"],
-          ["t5l","r3l"],
+          //["t5r","q13r"],
+          //["t5l","q13l"],
+          //["t5r","r3r"],
+          //["t5","r3"],
+          //["t5l","r3l"],
 		  
 		  
 		  ["t6rr","t1x9"],
@@ -346,27 +346,27 @@
           ["t5r","c6r"],
           ["t5","c6"],
           ["t5l","c6l"],
-          ["t2rr","q10r"],
-          ["t2ll","q10l"],
-          ["t3rr","q10r"],
-          ["t3ll","q10l"],
-          ["t4rr","q13r"],
-          ["t4ll","q13l"],
-          ["t2r","p8r"],
-          ["t2l","p8l"],
+          //["t2rr","q10r"],
+          //["t2ll","q10l"],
+          //["t3rr","q10r"],
+          //["t3ll","q10l"],
+          //["t4rr","q13r"],
+          //["t4ll","q13l"],
+          //["t2r","p8r"],
+          //["t2l","p8l"],
 		  
 		  
 
           //strong
           {"beamDeform":19040,"beamStrength":178000},
-          ["t6rr","q9r"],
-          ["t6ll","q9l"],
-          ["t5rr","q12r"],
-          ["t5ll","q12l"],
+          //["t6rr","q9r"],
+          //["t6ll","q9l"],
+          //["t5rr","q12r"],
+          //["t5ll","q12l"],
           
           
-          ["t2rr","q5r"],
-          ["t2ll","q5l"],
+          //["t2rr","q5r"],
+          //["t2ll","q5l"],
           {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
     ],
     "triangles": [
@@ -375,14 +375,14 @@
             {"groundModel":"plastic"},
             {"dragCoef":8},
             {"group":"tailcone"},
-            ["t2rr","t1rr","t2r"],
-            ["t1rr","t1r","t2r"],
-            ["t2r","t1r","t2"],
-            ["t1r","t1","t2"],
-            ["t2l","t2","t1l"],
-            ["t1l","t2","t1"],
-            ["t2ll","t2l","t1ll"],
-            ["t1ll","t2l","t1l"],
+            //["t2rr","t1rr","t2r"],
+            //["t1rr","t1r","t2r"],
+            //["t2r","t1r","t2"],
+            //["t1r","t1","t2"],
+            //["t2l","t2","t1l"],
+            //["t1l","t2","t1"],
+            //["t2ll","t2l","t1ll"],
+            //["t1ll","t2l","t1l"],
 
             ["t3rr","t2rr","t3r"],
             ["t2rr","t2r","t3r"],
@@ -402,13 +402,13 @@
             ["t4ll","t4l","t3ll"],
             ["t3ll","t4l","t3l"],
 
-            ["t1ll","t3ll","t2ll"],
-            ["t1ll","t6ll","t3ll"],
+            //["t1ll","t3ll","t2ll"],
+            //["t1ll","t6ll","t3ll"],
             ["t6ll","t4ll","t3ll"],
             ["t6ll","t5ll","t4ll"],
 
-            ["t2rr","t3rr","t1rr"],
-            ["t3rr","t6rr","t1rr"],
+            //["t2rr","t3rr","t1rr"],
+            //["t3rr","t6rr","t1rr"],
             ["t3rr","t4rr","t6rr"],
             ["t4rr","t5rr","t6rr"],
 

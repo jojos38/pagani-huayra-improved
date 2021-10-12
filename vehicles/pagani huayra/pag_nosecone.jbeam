@@ -15,9 +15,9 @@
          ["pag_nosecone", ["pag_nosecone"]],
 
          {"deformGroup":"noselight_R_break", "deformMaterialBase":"pag_lights", "deformMaterialDamaged":"pag_lights_dmg"},
-         ["pag_noselight_R", ["pag_nosecone"],[]{"deformSound":"GlassBreakSound1", "deformVolume":0.4}],
+         //["pag_noselight_R", ["pag_nosecone"],[]{"deformSound":"GlassBreakSound1", "deformVolume":0.4}],
          {"deformGroup":"noselight_L_break", "deformMaterialBase":"pag_lights", "deformMaterialDamaged":"pag_lights_dmg"},
-         ["pag_noselight_L", ["pag_nosecone"],[]{"deformSound":"GlassBreakSound2", "deformVolume":0.4}],
+         //["pag_noselight_L", ["pag_nosecone"],[]{"deformSound":"GlassBreakSound2", "deformVolume":0.4}],
          {"deformGroup":""},
     ],
     "props": [

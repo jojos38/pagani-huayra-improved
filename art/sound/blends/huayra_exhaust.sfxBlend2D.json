@@ -1,0 +1,38 @@
+{
+    "header" : {
+        "version" : 1
+    },
+    "eventName" : "event:>Engine>default",
+    "samples" : 
+    [
+        [
+            ["art/sound/engine/huayra/Exhaust_00938_off.wav", 938],
+            ["art/sound/engine/huayra/Exhaust_01655_off.wav", 1655],			
+            ["art/sound/engine/huayra/Exhaust_01912_off.wav", 1912],
+            ["art/sound/engine/huayra/Exhaust_02498_off.wav", 2498],
+            ["art/sound/engine/huayra/Exhaust_02959_off.wav", 2959],
+            ["art/sound/engine/huayra/Exhaust_03450_off.wav", 3450],
+            ["art/sound/engine/huayra/Exhaust_03845_off.wav", 3845],
+            ["art/sound/engine/huayra/Exhaust_04380_off.wav", 4380],
+            ["art/sound/engine/huayra/Exhaust_04724_off.wav", 4724],
+            ["art/sound/engine/huayra/Exhaust_05230_off.wav", 5230],
+            ["art/sound/engine/huayra/Exhaust_05786_off.wav", 5786]
+        ],
+        [
+            ["art/sound/engine/huayra/Exhaust_00872.wav", 872],
+            ["art/sound/engine/huayra/Exhaust_01179.wav", 1179],			
+            ["art/sound/engine/huayra/Exhaust_01787.wav", 1787],
+            ["art/sound/engine/huayra/Exhaust_02256.wav", 2256],
+            ["art/sound/engine/huayra/Exhaust_02618.wav", 2618],
+            ["art/sound/engine/huayra/Exhaust_02966.wav", 2966],
+            ["art/sound/engine/huayra/Exhaust_03699.wav", 3699],
+            ["art/sound/engine/huayra/Exhaust_04124.wav", 4124],
+            ["art/sound/engine/huayra/Exhaust_04644.wav", 4644],
+            ["art/sound/engine/huayra/Exhaust_05098.wav", 5098],
+            ["art/sound/engine/huayra/Exhaust_05574.wav", 5574],
+            ["art/sound/engine/huayra/Exhaust_05790.wav", 5790],
+            ["art/sound/engine/huayra/Exhaust_06035.wav", 6035],
+			["art/sound/engine/huayra/Exhaust_06709.wav", 6709]
+        ]
+    ]
+}

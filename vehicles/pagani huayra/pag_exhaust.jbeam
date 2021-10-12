@@ -81,7 +81,7 @@
           ["ex6rr", "ex4r"],
           ["ex6rr", "ex3r"],
           ["ex6rr", "ex6r"],
-          ["ex6r", "ex7r"],
+          //["ex6r", "ex7r"],
 
           //left
           ["ex1l", "ex2l"{"isExhaust":"mainEngine"}],
@@ -125,7 +125,7 @@
           ["ex2l", "ex7l"],
           ["ex5l", "ex7l"],
           ["ex4l", "ex7l"],
-          ["ex6l", "ex7l"],
+          //["ex6l", "ex7l"],
           ["ex6ll", "ex7l"],
 
           //attach to engine

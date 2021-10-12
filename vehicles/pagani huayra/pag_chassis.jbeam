@@ -68,9 +68,9 @@
          {"rotation":{"x":0, "y":0, "z":0}, "translation":{"x":0, "y":0, "z":0}},
          //chassis
          ["pag_chassis", ["pag_chassis","pag_uppermounts_F","pag_lowermounts_a_F","pag_lowermounts_b_F","pag_uppermounts_R","pag_lowermounts_R"]],
-	     ["pag_body_3", ["pag_chassis"]],
+	     //["pag_body_3", ["pag_chassis"]],
          ["pag_engbaycrap", ["pag_chassis","pag_shocktop_R","pag_uppermounts_R","pag_lowermounts_R"]],
-         ["pag_intbase", ["pag_chassis"]],
+         //["pag_intbase", ["pag_chassis"]],
     ],
     "props": [
         ["func"      , "mesh"              , "idRef:", "idX:", "idY:"            , "baseRotation"        , "rotation"                 , "translation"        , "min", "max", "offset", "multiplier"]
@@ -748,7 +748,7 @@
           ["c3l","c4r"],
           ["c3l","c4ll"],
           ["c3ll","c4l"],
-            ["c4r", "c0"],
+           // ["c4r", "c0"],
             ["c4l", "c4"],
 			
           //top

@@ -516,7 +516,7 @@
     ],
     "flexbodies": [
          ["mesh", "[group]:", "nonFlexMaterials"],
-         ["pag_swaybar_F", ["pag_lowerarm_FR","pag_lowerarm_FL","pag_shockbottom_F","pag_lowermounts_a_F","pag_lowermounts_b_F"]],
+         //["pag_swaybar_F", ["pag_lowerarm_FR","pag_lowerarm_FL","pag_shockbottom_F","pag_lowermounts_a_F","pag_lowermounts_b_F"]],
     ],
     "nodes": [
          ["id", "posX", "posY", "posZ"],

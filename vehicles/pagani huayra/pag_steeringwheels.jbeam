@@ -8,7 +8,7 @@
     "slotType" : "pag_steer",
     "flexbodies": [
          ["mesh", "[group]:", "nonFlexMaterials"],
-         ["pag_steeringcolumn", ["pag_chassis"]],
+         //["pag_steeringcolumn", ["pag_chassis"]],
     ],
     "props": [
         ["func"      , "mesh"              , "idRef:", "idX:", "idY:"            , "baseRotation"        , "rotation"                 , "translation"        , "min", "max", "offset", "multiplier"]

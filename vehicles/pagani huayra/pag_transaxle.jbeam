@@ -151,7 +151,7 @@
     ],
     "flexbodies": [
          ["mesh", "[group]:", "nonFlexMaterials"],
-         ["pag_halfshaft_R", ["pag_transaxle","pag_upperarm_R","pag_lowerarm_R"]],
+         //["pag_halfshaft_R", ["pag_transaxle","pag_upperarm_R","pag_lowerarm_R"]],
     ],
     "beams": [
           ["id1:", "id2:"],

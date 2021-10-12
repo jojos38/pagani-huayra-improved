@@ -64,9 +64,7 @@ singleton Material(lights_pag_on)
 singleton Material(PAG_HUAYRA_DISC)
 {
     mapTo = "PAG_HUAYRA_DISC";
-    diffuseMap[0] = "metalplaceholder.dds";
     diffuseColor[0] = "1 1 1 0.25";
-    specularPower[0] = "64";
     useAnisotropic[0] = "1";
     castShadows = "1";
     translucent = "0";
@@ -76,34 +74,23 @@ singleton Material(PAG_HUAYRA_DISC)
     dynamicCubemap = true;
     cubemap = "global_cubemap_metalblurred";
     materialTag0 = "beamng"; materialTag1 = "vehicle";
+   colorMap[0] = "/vehicles/pagani huayra/metalplaceholder.dds";
+   roughnessFactor[0] = "0.519615531";
 };
 
 singleton Material(PAG_HUAYRA_PAINT)
 {
     mapTo = "PAG_HUAYRA_PAINT";
-    useAnisotropic[0] = "1";
     castShadows = "1";
-    translucent = "0";
+    translucent = "1";
     doubleSided = "0";
     translucentZWrite = "1";
-    diffuseMap[2] = "gtr_main_c.dds";
-    specularMap[2] = "gtr_specocc.dds";
-    diffuseMap[1] = "gtr_main_d.dds";
-    specularMap[1] = "gtr_specocc.dds";
-    diffuseMap[0] = "vehicles/common/null.dds";
-    specularMap[0] = "Nbody.dds";
-    normalMap[0] = "Nbody.dds";
-    normalMap[1] = "Nbody.dds";
+    normalMap[0] = "/vehicles/pagani huayra/Nbody.dds";
+    normalMap[1] = "/vehicles/pagani huayra/Nbody.dds";
     normalMap[2] = "Nbody.dds";
-  specularPower[0] = "128";
     pixelSpecular[0] = "1";
-    specularPower[1] = "128";
     pixelSpecular[1] = "1";
-    specularPower[1] = "128";
     pixelSpecular[1] = "1";
-   useAnisotropic[0] = "1";
-   useAnisotropic[1] = "1";
-   useAnisotropic[2] = "0";
    translucent = "1";
    translucentBlendOp = "None";
    alphaRef = "0";
@@ -114,9 +101,20 @@ singleton Material(PAG_HUAYRA_PAINT)
     alphaRef = "0";
     dynamicCubemap = true;
     instanceDiffuse[2] = true;
-   diffuseColor[2] = "0.992156923 0.992156923 0.992156923 0.561999977";
    specular[2] = "0.70588237 0.70588237 0.70588237 2";
-   specularPower[2] = "1";
+   version = "1.5";
+   activeLayers = "2";
+   instanceDiffuse[1] = "1";
+   baseColorMap[0] = "/vehicles/pagani huayra/pag_b.dds";
+   baseColorMap[2] = "gtr_main_c.dds";
+   baseColorFactor[2] = "0.992156923 0.992156923 0.992156923 0.561999977";
+   roughnessMap[0] = "/vehicles/pagani huayra/pag_r.dds";
+   clearCoatMap[1] = "/vehicles/pagani huayra/pag_cc.dds";
+   clearCoatFactor[1] = "1";
+   opacityMap[1] = "/vehicles/pagani huayra/pag_cc.dds";
+   colorPaletteMap[1] = "/vehicles/pagani huayra/pag_p.dds";
+   roughnessFactor[1] = "0.445299804";
+   metallicFactor[1] = "1";
 };
 
 singleton Material("PAG_HUAYRA_PAINT.skin.singleligne")
@@ -254,23 +252,11 @@ singleton Material(GENERIC_LICPLATE_EURO)
 singleton Material(PAG_HUAYRA_MISC)
 {
    mapTo = "PAG_HUAYRA_MISC";
-    diffuseMap[0] = "misc.dds";
-    diffuseMap[1] = "misc.dds";
-    normalMap[0] = "misc_nm.dds";
-    normalMap[1] = "misc_nm.dds";
-    specularMap[0] = "misc_s.dds";
-    specularMap[1] = "misc_s.dds";
+    normalMap[0] = "/vehicles/pagani huayra/misc_nm.dds";
+    normalMap[1] = "/vehicles/pagani huayra/misc_nm.dds";
    doubleSided = "1";
-    specularPower[0] = "16";
     pixelSpecular[0] = "1";
-    specularPower[1] = "16";
     pixelSpecular[1] = "1";
-    diffuseColor[0] = "1 1 1 1";
-    diffuseColor[1] = "1 1 1 1";
-    diffuseColor[2] = "1 1 1 1";
-    useAnisotropic[0] = "1";
-    useAnisotropic[1] = "1";
-    useAnisotropic[2] = "1";
     castShadows = "1";
     translucent = "1";
     translucentBlendOp = "None";
@@ -278,6 +264,12 @@ singleton Material(PAG_HUAYRA_MISC)
     alphaRef = "0";
     dynamicCubemap = true; 
     materialTag0 = "beamng"; materialTag1 = "vehicle";
+   version = "1.5";
+   roughnessFactor[0] = "0.722649872";
+   roughnessFactor[1] = "0.722649872";
+   baseColorMap[0] = "/vehicles/pagani huayra/misc.dds";
+   baseColorMap[1] = "/vehicles/pagani huayra/misc.dds";
+   metallicFactor[0] = "1";
 };
 
 singleton Material(PAG_HUAYRA_WINDOWS_2)
@@ -285,22 +277,25 @@ singleton Material(PAG_HUAYRA_WINDOWS_2)
 
    mapTo = "PAG_HUAYRA_WINDOWS_2";
     reflectivityMap[0] = "vehicles/common/glass_base.dds";
-    diffuseMap[0] = "glass_d.dds";
-    opacityMap[0] = "glass_d.dds";
-    diffuseMap[1] = "glass_da.dds";
-    specularMap[0] = "vehicles/common/null.dds";
+    opacityMap[0] = "/vehicles/pagani huayra/glass_d.dds";
     normalMap[0] = "vehicles/common/null_n.dds";
-    diffuseColor[1] = "0.5 0.5 0.5 0.75";
-    specularPower[0] = "128";
     pixelSpecular[0] = "1";
-    diffuseColor[0] = "1 1.5 1.5 1";
-    useAnisotropic[0] = "1";
     castShadows = "0";
     translucent = "1";
     alphaTest = "0";
     alphaRef = "0";
     dynamicCubemap = true;
     materialTag0 = "beamng"; materialTag1 = "vehicle";
+   version = "1.5";
+   roughnessFactor[0] = "0";
+   baseColorMap[0] = "/vehicles/pagani huayra/glass_d.dds";
+   baseColorMap[1] = "/vehicles/pagani huayra/glass_da.dds";
+   baseColorFactor[0] = "3.92156911 0 0 1";
+   baseColorFactor[1] = "0.5 0.5 0.5 0.75";
+   clearCoatFactor[0] = "1";
+   clearCoatRoughnessFactor[0] = "0";
+   detailScale[0] = "1 1";
+   translucentBlendOp = "PreMulAlpha";
 };
 
 singleton Material(PAG_HUAYRA_COCKPIT_2)
@@ -320,14 +315,15 @@ singleton Material(PAG_HUAYRA_COCKPIT_2)
 singleton Material(PAG_HUAYRA_SW)
 {
     mapTo = "PAG_HUAYRA_SW";
-    diffuseMap[0] = "cockpit_f.dds";
-    specularMap[0] = "cockpit_f_s.dds";
-    normalMap[0] = "cockpit_f_n.dds";
+    specularMap[0] = "/vehicles/pagani huayra/cockpit_f_s.dds";
+    normalMap[0] = "/vehicles/pagani huayra/cockpit_f_n.dds";
 	diffuseColor[0] = "1 1 1 0.1";
 	dynamicCubemap = true;
 	doubleSided = "1";
     beamngDiffuseColorSlot = 2; //cubemap = "BNG_Sky_02_cubemap";
     materialTag0 = "beamng"; materialTag1 = "vehicle";
+   instanceDiffuse[2] = "1";
+   colorMap[0] = "/vehicles/pagani huayra/cockpit_f.dds";
 };
 
 singleton Material(PAG_HUAYRA_SW_GLOW)
@@ -397,9 +393,7 @@ singleton Material(PAG_HUAYRA_CARBON_SILVER)
 singleton Material(PAG_HUAYRA_COCKPIT)
 {
    mapTo = "PAG_HUAYRA_COCKPIT";
-    diffuseMap[0] = "gauges.dds";
-    diffuseMap[1] = "gauges.dds";
-    specularMap[0] = "gauges_s.dds";
+    specularMap[0] = "/vehicles/pagani huayra/gauges_s.dds";
     specularMap[1] = "gauges_s.dds";
     //normalMap[0] = "gauges_nm.dds";
     //normalMap[1] = "gauges_nm.dds";
@@ -408,31 +402,37 @@ singleton Material(PAG_HUAYRA_COCKPIT)
     doubleSided = "1";
     beamngDiffuseColorSlot = 2; //cubemap = "BNG_Sky_02_cubemap";
     materialTag0 = "beamng"; materialTag1 = "vehicle";
+   instanceDiffuse[2] = "1";
+   colorMap[0] = "/vehicles/pagani huayra/gauges.dds";
+   colorMap[1] = "/vehicles/pagani huayra/gauges.dds";
 };
 
 singleton Material(PAG_HUAYRA_COCKPIT_FRESNEL)
 {
    mapTo = "PAG_HUAYRA_COCKPIT_FRESNEL";
-    diffuseMap[0] = "cockpit_f.dds";
-    specularMap[0] = "cockpit_f_s.dds";
-    normalMap[0] = "cockpit_f_n.dds";
+    specularMap[0] = "/vehicles/pagani huayra/cockpit_f_s.dds";
+    normalMap[0] = "/vehicles/pagani huayra/cockpit_f_n.dds";
 	diffuseColor[0] = "1 1 1 0.1";
 	dynamicCubemap = false;
 	doubleSided = "1";
     beamngDiffuseColorSlot = 2; //cubemap = "BNG_Sky_02_cubemap";
     materialTag0 = "beamng"; materialTag1 = "vehicle";
+   instanceDiffuse[2] = "1";
+   colorMap[0] = "/vehicles/pagani huayra/cockpit_f.dds";
 };
 
 singleton Material(PAG_HUAYRA_LEATHER)
 {
    mapTo = "PAG_HUAYRA_LEATHER";
-    diffuseMap[0] = "leather_b.dds";
-    normalMap[0] = "leather_b_n.dds";
-	diffuseColor[0] = "1 1 1 0.1";
+    normalMap[0] = "/vehicles/pagani huayra/leather_b_n.dds";
 	dynamicCubemap = false;
 	doubleSided = "1";
     beamngDiffuseColorSlot = 2; //cubemap = "BNG_Sky_02_cubemap";
     materialTag0 = "beamng"; materialTag1 = "vehicle";
+   version = "1.5";
+   instanceDiffuse[2] = "1";
+   baseColorMap[0] = "/vehicles/pagani huayra/leather_b.dds";
+   baseColorFactor[0] = "0.63529402 0.474510014 0.227450997 1";
 };
 
 singleton Material(PAG_HUAYRA_LEATHER_STITCHES)
@@ -474,23 +474,11 @@ singleton Material(PAG_HUAYRA_INTERIOR_GLOW)
 singleton Material(PAG_HUAYRA_MISC_2)
 {
    mapTo = "PAG_HUAYRA_MISC_2";
-    diffuseMap[0] = "misc_2.dds";
-    diffuseMap[1] = "misc_2.dds";
-    normalMap[0] = "misc_2_nm.dds";
-    normalMap[1] = "misc_2_nm.dds";
-    specularMap[0] = "misc_2_s.dds";
-    specularMap[1] = "misc_2_s.dds";
+    normalMap[0] = "/vehicles/pagani huayra/misc_2_nm.dds";
+    normalMap[1] = "/vehicles/pagani huayra/misc_2_nm.dds";
     doubleSided = "1";
-    specularPower[0] = "16";
     pixelSpecular[0] = "1";
-    specularPower[1] = "16";
     pixelSpecular[1] = "1";
-    diffuseColor[0] = "1 1 1 1";
-    diffuseColor[1] = "1 1 1 1";
-    diffuseColor[2] = "1 1 1 1";
-    useAnisotropic[0] = "1";
-    useAnisotropic[1] = "1";
-    useAnisotropic[2] = "1";
     castShadows = "1";
     translucent = "1";
     translucentBlendOp = "None";
@@ -498,37 +486,42 @@ singleton Material(PAG_HUAYRA_MISC_2)
     alphaRef = "0";
     dynamicCubemap = true; 
     materialTag0 = "beamng"; materialTag1 = "vehicle";
+   version = "1";
+   roughnessFactor[0] = "0.722649872";
+   roughnessFactor[1] = "0.722649872";
+   colorMap[0] = "/vehicles/pagani huayra/misc_2.dds";
+   colorMap[1] = "/vehicles/pagani huayra/misc_2.dds";
+   specularMap[0] = "/vehicles/pagani huayra/misc_2_s.dds";
+   specularMap[1] = "misc_2_s.dds";
+   useAnisotropic[0] = "1";
+   useAnisotropic[1] = "1";
+   useAnisotropic[2] = "1";
 };
 
 singleton Material(PAG_HUAYRA_BADGES_SKIN)
 {
    mapTo = "PAG_HUAYRA_BADGES_SKIN";
-    diffuseMap[0] = "symbols.dds";
-    diffuseMap[1] = "symbols.dds";
-    diffuseMap[2] = "symbols.dds";
-    normalMap[0] = "symbols_nm.dds";
-    normalMap[1] = "symbols_nm.dds";
+    normalMap[0] = "/vehicles/pagani huayra/symbols_nm.dds";
+    normalMap[1] = "/vehicles/pagani huayra/symbols_nm.dds";
     normalMap[2] = "symbols_nm.dds";
-    specularMap[0] = "symbols_s.dds";
-    specularMap[1] = "symbols_s.dds";
-    specularMap[2] = "symbols_s.dds";
-    diffuseColor[1] = "0.5 0.5 0.5 0.75";
-   diffuseColor[0] = "0.8 0.8 0.8 1";
    specular[0] = "0 0 0 1";
-   specularPower[0] = "50";
-   translucent = "0";
-   diffuseColor[1] = "1 1 1 0.423";
-   diffuseColor[2] = "1 1 1 0.664";
-   specularPower[0] = "128";
+   translucent = "1";
    pixelSpecular[0] = "1";
-   diffuseColor[0] = "1 1 1 1";
-   useAnisotropic[0] = "1";
    castShadows = "0";
    translucent = "1";
    alphaTest = "0";
    alphaRef = "0";
    dynamicCubemap = true;
    materialTag0 = "beamng"; materialTag1 = "vehicle";
+   version = "1.5";
+   roughnessFactor[0] = "0.234999999";
+   baseColorMap[0] = "/vehicles/pagani huayra/symbols.dds";
+   baseColorMap[1] = "/vehicles/pagani huayra/symbols.dds";
+   baseColorMap[2] = "symbols.dds";
+   baseColorFactor[1] = "1 1 1 0.423000008";
+   baseColorFactor[2] = "1 1 1 0.663999975";
+   metallicFactor[0] = "0.629999995";
+   detailScale[0] = "1 1";
 };
 
 singleton Material(PAG_HUAYRA_BADGES)
@@ -555,23 +548,11 @@ singleton Material(PAG_HUAYRA_BADGES)
 singleton Material(PAG_HUAYRA_PAINT_2)
 {
    mapTo = "PAG_HUAYRA_PAINT_2";
-    diffuseMap[0] = "carbon_blackbody2.dds";
-    diffuseMap[1] = "carbon_blackbody2.dds";
-    normalMap[0] = "body2_n.dds";
-    normalMap[1] = "body2_n.dds";
-    specularMap[0] = "body2_s.dds";
-    specularMap[1] = "body2_s.dds";
+    normalMap[0] = "/vehicles/pagani huayra/body2_n.dds";
+    normalMap[1] = "/vehicles/pagani huayra/body2_n.dds";
     doubleSided = "1";
-    specularPower[0] = "16";
     pixelSpecular[0] = "1";
-    specularPower[1] = "16";
     pixelSpecular[1] = "1";
-    diffuseColor[0] = "1 1 1 1";
-    diffuseColor[1] = "1 1 1 1";
-    diffuseColor[2] = "1 1 1 1";
-    useAnisotropic[0] = "1";
-    useAnisotropic[1] = "1";
-    useAnisotropic[2] = "1";
     castShadows = "1";
     translucent = "1";
     translucentBlendOp = "None";
@@ -579,65 +560,34 @@ singleton Material(PAG_HUAYRA_PAINT_2)
     alphaRef = "0";
     dynamicCubemap = true; 
     materialTag0 = "beamng"; materialTag1 = "vehicle";
+   version = "1.5";
+   activeLayers = "2";
+   baseColorMap[0] = "/vehicles/pagani huayra/carbon_blackbody2.dds";
+   baseColorMap[1] = "/vehicles/pagani huayra/carbon_blackbody2.dds";
+   baseColorFactor[1] = "0.392156988 0.392156988 0.392156988 1";
+   roughnessMap[0] = "/vehicles/pagani huayra/Nbody.dds";
+   clearCoatMap[1] = "/vehicles/pagani huayra/pag_cc.dds";
+   clearCoatFactor[1] = "1";
+   opacityMap[1] = "/vehicles/pagani huayra/pag_cc.dds";
+   colorPaletteMap[1] = "/vehicles/pagani huayra/pag_p.dds";
+   detailScale[1] = "1 1";
+   detailNormalMap[1] = "/vehicles/pagani huayra/body2_n.dds";
 };
 
 singleton Material(COMMON_PAGANI_CARBON)
 {
    mapTo = "COMMON_PAGANI_CARBON";
-    diffuseMap[0] = "carbon_black.dds";
-    normalMap[0] = "carbon_n.dds";
+    normalMap[0] = "/vehicles/pagani huayra/carbon_n.dds";
 	diffuseColor[0] = "1 1 1 0.1";
 	dynamicCubemap = true;
 	doubleSided = "1";
     beamngDiffuseColorSlot = 2; //cubemap = "BNG_Sky_02_cubemap";
     materialTag0 = "beamng"; materialTag1 = "vehicle";
+   instanceDiffuse[2] = "1";
+   colorMap[0] = "/vehicles/pagani huayra/carbon_black.dds";
 };
 
-singleton Material(pag_glass_black)
-{
-    mapTo = "pag_glass_black";
-    reflectivityMap[0] = "vehicles/common/glass_base.dds";
-    diffuseMap[0] = "glass_black.dds";
-    opacityMap[0] = "glass_COLOR.dds";
-    diffuseMap[1] = "glass_black.dds";
-    specularMap[0] = "vehicles/common/null.dds";
-    //normalMap[0] = "Nbody.dds";
-    //normalMap[1] = "Nbody.dds";
-    //normalMap[0] = "vehicles/common/null_n.dds";
-    diffuseColor[1] = "0.5 0.5 0.5 0.75";
-    specularPower[0] = "128";
-    pixelSpecular[0] = "1";
-    diffuseColor[0] = "1 1.5 1.5 1";
-    useAnisotropic[0] = "1";
-    castShadows = "0";
-    translucent = "1";
-    alphaTest = "0";
-    alphaRef = "0";
-    dynamicCubemap = true;
-    materialTag0 = "beamng"; materialTag1 = "vehicle";
-};
 
-singleton Material(pag_glass)
-{
-    mapTo = "pag_glass";
-    reflectivityMap[0] = "vehicles/common/glass_base.dds";
-    diffuseMap[0] = "glass_COLOR.dds";
-    opacityMap[0] = "glass_COLOR.dds";
-    diffuseMap[1] = "glass_COLOR.dds";
-    specularMap[0] = "vehicles/common/null.dds";
-    normalMap[0] = "vehicles/common/null_n.dds";
-    diffuseColor[1] = "0.5 0.5 0.5 0.75";
-    specularPower[0] = "128";
-    pixelSpecular[0] = "1";
-    diffuseColor[0] = "1 1.5 1.5 1";
-    useAnisotropic[0] = "1";
-    castShadows = "0";
-    translucent = "1";
-    alphaTest = "0";
-    alphaRef = "0";
-    dynamicCubemap = true;
-    materialTag0 = "beamng"; materialTag1 = "vehicle";
-};
 
 singleton Material(pag_glass_int)
 {
@@ -718,10 +668,10 @@ singleton Material(pag_gauges_on)
     mapTo = "pag_gauges_on";
     diffuseMap[1] = "gauges_on.dds";
     specularMap[1] = "gauges_s.dds";
-    normalMap[1] = "gauges_n.dds";
+    //normalMap[1] = "gauges_n.dds";
     diffuseMap[0] = "gauges.dds";
     specularMap[0] = "gauges_s.dds";
-    normalMap[0] = "gauges_n.dds";
+    //normalMap[0] = "gauges_n.dds";
     specularPower[0] = "128";
     pixelSpecular[0] = "1";
     emissive[1] = "1";
@@ -902,6 +852,7 @@ singleton Material(pag_headlight)
 singleton Material(pag_reverselight)
 {
     mapTo = "pag_reverselight";
+   activeLayers = "3";
 };
 
 singleton Material(GENERIC_MIRROR_SKIN)
@@ -917,3 +868,59 @@ singleton Material(GENERIC_MIRROR_SKIN)
     alphaRef = "0";
 };
 
+
+singleton Material(pag_glass)
+{
+   mapTo = "pag_glass";
+   version = "1.5";
+   diffuseMapUseUV[0] = "1";
+   normalMap[0] = "vehicles/common/null_n.dds";
+   roughnessFactor[0] = "0.445299804";
+   baseColorMap[0] = "/vehicles/pagani huayra/glass_COLOR.dds";
+   baseColorMap[1] = "/vehicles/pagani huayra/glass_COLOR.dds";
+   baseColorFactor[0] = "0.588235021 1 1 1";
+   baseColorFactor[1] = "0.5 0.5 0.5 0.75";
+   clearCoatFactor[0] = "1";
+   clearCoatRoughnessFactor[0] = "0";
+   opacityMap[0] = "/vehicles/pagani huayra/glass_COLOR.dds";
+   reflectivityMap[0] = "vehicles/common/glass_base.dds";
+   pixelSpecular[0] = "1";
+   diffuseMapUV[0] = "1";
+   castShadows = "0";
+   translucent = "1";
+   translucentBlendOp = "PreMulAlpha";
+   alphaRef = "0";
+   dynamicCubemap = "1";
+   persistentId = "6ad2380a-c84c-4dba-bb1e-24310d5e21bf";
+   materialTag0 = "beamng";
+   materialTag1 = "vehicle";
+};
+
+singleton Material(pag_glass_black)
+{
+   mapTo = "pag_glass_black";
+   version = "1.5";
+   activeLayers = "2";
+   detailMapUseUV[0] = "1";
+   roughnessFactor[0] = "0";
+   baseColorMap[0] = "/vehicles/pagani huayra/glass_black.dds";
+   baseColorMap[1] = "/vehicles/pagani huayra/glass_black.dds";
+   baseColorFactor[0] = "1 1.50196099 1.50196099 1";
+   baseColorFactor[1] = "1 1 1 8.05882359";
+   opacityFactor[1] = "0.949999988";
+   metallicFactor[0] = "1";
+   clearCoatFactor[1] = "1";
+   clearCoatRoughnessFactor[0] = "0";
+   clearCoatRoughnessFactor[1] = "0";
+   opacityMap[0] = "/vehicles/pagani huayra/glass_COLOR.dds";
+   reflectivityMap[0] = "vehicles/common/glass_base.dds";
+   pixelSpecular[0] = "1";
+   detailMapUV[0] = "1";
+   translucent = "1";
+   translucentBlendOp = "PreMulAlpha";
+   alphaRef = "0";
+   dynamicCubemap = "1";
+   persistentId = "104714b2-708e-4ecc-b892-fff7c7841169";
+   materialTag0 = "beamng";
+   materialTag1 = "vehicle";
+};
