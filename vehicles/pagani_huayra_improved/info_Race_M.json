@@ -1,0 +1,14 @@
+{
+"Config Type":"Service",
+"Performance Class":"9",
+"Drivetrain":"AWD",
+"Body Style":"Coupe",
+"Value":1500000,
+"Description":"The fastest variant, made for racing",
+"Configuration":"Race (M)",
+"Induction Type":"NA",
+"default_color":"Brilliance",
+"Propulsion":"ICE",
+"Transmission":"Manual",
+"Fuel Type":"Gasoline"
+}

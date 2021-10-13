@@ -1,0 +1,27 @@
+{
+"pag_oilcooler": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Oil Cooler",
+        "value":110,
+    },
+    "slotType" : "pag_oilcooler",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["pag_oilcooler", ["pag_chassis"]],
+    ],
+    "mainEngine":{
+        "oilRadiatorArea":0.16,
+        "oilRadiatorEffectiveness":1000,
+        "oilThermostatTemperature":110
+    },
+    "beams": [
+          ["id1:", "id2:"],
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},//--FRONT BUMPER--
+          {"beamSpring":506460,"beamDamp":58},
+          {"beamDeform":21450,"beamStrength":"FLT_MAX"},
+          {"beamPrecompression":1.0},
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+    ],
+},
+}

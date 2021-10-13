@@ -1,0 +1,137 @@
+{
+"pag_rollcage": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Roll Cage",
+        "value":2200,
+    }
+    "slotType" : "pag_rollcage",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["pag_rollcage", ["sbr_rollcage","sbr_body","sbr_roof"]],
+    ],
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         {"frictionCoef":0.5},
+         {"nodeMaterial":"|NM_METAL"},
+         {"selfCollision":true}
+         {"collision":true}
+         {"nodeWeight":15},
+         {"group":"sbr_rollcage"},
+         ["rc1", 0.0, 0.45, 0.8],
+         {"group":""},
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          {"beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"beamSpring":1601000,"beamDamp":50},
+          {"beamDeform":180000,"beamStrength":"FLT_MAX"},
+          ["rc1","rf3r"],
+          ["rc1","rf3l"],
+          ["rc1","f3rr"],
+          ["rc1","f3ll"],
+		  
+		   ["rc1","fi1ll"],
+           ["rc1","fi1rr"],
+           ["rc1","fi1lll"],
+           ["rc1","fi1rrr"],
+
+          ["rc1","rf1"],
+          ["rc1","rf2"],
+          ["rc1","rf3"],
+
+          ["rf3r","c4rr"],
+          ["rf3l","c4ll"],
+          ["rf4r","c0"],
+          ["rf4l","c4"],
+		  
+          ["rc1","c10r"],
+          ["rc1","c10l"],
+          ["rc1","q2r"],
+          ["rc1","q2l"],
+          ["rc1","q0"],
+          ["rc1","q1"],		  
+
+          ["rc1","c2rr"],
+          ["rc1","c2ll"],
+
+          ["rc1","rf1r"],
+          ["rc1","rf1l"],
+
+          ["rf1r","rf1l"],
+          ["rf3r","rf3l"],
+
+          ["rf3r","q2r"],
+          ["rf3l","q2l"],
+          ["rf3r","c10r"],
+          ["rf3l","c10l"],
+
+          ["rf1r","c2rr"],
+          ["rf1l","c2ll"],
+          ["rf1r","c0"],
+          ["rf1l","c4"],		  
+          ["rf1r","c3rr"],
+          ["rf1l","c3ll"],
+          ["p2rr","c8rr"],
+          ["p2ll","c8ll"],
+
+          ["f3rr","fi1rr"],
+          ["f3ll","fi1ll"],
+
+          //["q1r","f1rr"],
+          //["q1l","f1ll"],
+          //["q1r","c8rr"],
+          //["q1l","c8ll"],
+		  
+
+            ["h38", "h1l"],
+            ["h26", "h1r"],
+            ["h1r", "h6"],
+            ["h12", "h1l"],
+            ["h23", "h35"],
+            ["h26", "h38"],
+
+            ["t3x9", "t1x3"],
+            ["t4x2", "t9"],
+            ["t9", "t2x3"],
+            ["t1x3", "t1x9"],
+            ["t1x5", "tg2r"],
+            ["t1x1", "tg2l"],
+            ["tg2l", "tg4r"],
+            ["tg2r", "tg4l"],
+            ["t15", "tg3l"],
+            ["t14", "tg3r"],
+            ["t4x1", "t2x3"],
+            ["t3x8", "t1x9"],
+
+            ["t2x9", "t0"],
+            ["t3x1", "t0"],
+            ["t3x0", "t0"],
+            ["t3x2", "t4x"],
+            ["t3x3", "t4x"],
+            ["t3x4", "t4x"],
+
+            ["c2rr", "c9ll"],
+            ["c3rr", "c4ll"],
+            ["c4rr", "c4"],
+            ["c0", "q11l"],
+            ["q11r", "c4"],
+            ["c0", "c4ll"],
+            ["c4rr", "c9ll"],
+            ["c3rr", "c2ll"],
+            ["c13", "c5r"],
+            ["c10", "c5l"],
+            ["fi1rrr", "c3rr"],
+            ["fi1rrr", "rf1r"],	
+
+            ["t4x1", "t2x7"],
+            ["t2x8", "t3x3"],
+            ["t3x8", "t2x5"],
+            ["t3x0", "t2x6"],
+			
+
+		
+    ],
+}
+},
+}
