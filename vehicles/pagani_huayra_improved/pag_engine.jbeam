@@ -90,7 +90,7 @@
         "pistonRingDamageThreshold":1500000
         "connectingRodDamageThreshold":2000000
         
-        "maxTorqueRating": 1000,
+        "maxTorqueRating": 1100,
         "maxOverTorqueDamage": 500,
 
         //node beam interface
