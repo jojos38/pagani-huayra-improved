@@ -35,7 +35,7 @@ local function updateGFX(dt)
 			spoilerR = spoilerRNormal --(we are above the normal spoiler position speed, so set the spoiler to normal)
 		end
     else --we are not braking AND below the normal position speed
-		if (sensors.gx2 >= 5 or sensors.gx2 <= -5) and speed < speedThresholdNormalPosition and spoilerR ~= spoilerRClosed then
+		if ((sensors.gx2 >= 5 or sensors.gx2 <= -5) or speed < speedThresholdNormalPosition) and spoilerR ~= spoilerRClosed then
 			spoilerR = spoilerRClosed
 		end
         
