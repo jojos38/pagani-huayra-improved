@@ -1,7 +1,7 @@
 {
   "format":2,
   "licenseName":"253-ZAH",
-  "model":"pagani huayra",
+  "model":"pagani_huayra_improved",
   "paints":[
     {
       "baseColor":[
@@ -65,8 +65,8 @@
     "pag_doorglass_L":"pag_doorglass_L",
     "pag_doorglass_R":"pag_doorglass_R",
     "pag_engine":"pag_engine_race",
-    "pag_engine_ecu":"pag_engine_ecu_race",
-    "pag_engine_internals":"pag_engine_internals_race",
+    "pag_engine_ecu":"pag_engine_ecu",
+    "pag_engine_internals":"pag_engine_internals",
     "pag_exhaust":"pag_exhaust",
     "pag_fenderflare_R":"",
     "pag_flywheel":"pag_flywheel_race",
@@ -83,9 +83,9 @@
     "pag_mod":"",
     "pag_nosecone":"pag_nosecone",
     "pag_oilcooler":"",
+    "pag_oilpan":"pag_oilpan",
     "pag_power_steering":"pag_power_steering_adaptive",
     "pag_radiator":"pag_radiator_race",
-    "pag_rollcage":"pag_rollcage",
     "pag_seat_L":"pag_seat_L",
     "pag_seat_R":"pag_seat_R",
     "pag_spoiler_FL":"pag_spoiler_FL",
@@ -135,12 +135,9 @@
     "$gear_6":1.22,
     "$gear_7":1.04,
     "$gear_R":5,
-    "$idleRPM":780,
     "$lsdlockcoef_R":0.1,
     "$lsdlockcoefrev_R":0.2,
     "$lsdpreload_R":125,
-    "$revLimiterCutTime":0.2,
-    "$revLimiterRPM":6100,
     "$spring_F":125000,
     "$spring_R":100000,
     "$springheight_F":0.02,
