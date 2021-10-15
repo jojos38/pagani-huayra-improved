@@ -10,8 +10,9 @@
     "slots": [
         ["type", "default", "description"]
         ["pag_spoiler_RR","", "Rear Spoiler RR"],
-        ["pag_spoiler_RL","", "Rear Spoiler RL"],	
+        ["pag_spoiler_RL","", "Rear Spoiler RL"],
         ["pag_tailgateglass","pag_tailgateglass", "Tailgate Glass"],
+		["pag_wing","", "Spoiler"],	
     ],		
     "flexbodies": [
          ["mesh", "[group]:", "nonFlexMaterials"],
