@@ -39,7 +39,6 @@
         "opacityMap": "/vehicles/pagani_huayra_improved/symbols.dds",
         "pixelSpecular": true,
         "roughnessFactor": 0.445299804,
-        "specularMap": "/vehicles/pagani_huayra_improved/symbols_s.dds",
         "useAnisotropic": true
       },
       {
