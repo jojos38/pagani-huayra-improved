@@ -349,7 +349,7 @@ local function updateInGear(dt)
 	  M.throttle = 1
     end
 	
-	if (engine.outputAV1 * constants.avToRPM > engine.maxRPM + 500) then
+	if (engine.outputAV1 * constants.avToRPM > engine.maxRPM + 1000) then
 	  --gearbox:setGearIndex(gearbox.gearIndex - 1)
       shiftUp()
 	  M.throttle = 0
