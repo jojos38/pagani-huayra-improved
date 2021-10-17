@@ -1,6 +1,5 @@
 {
   "format":2,
-  "licenseName":"jojos38 [Certifié 38]",
   "model":"pagani_huayra_improved",
   "paints":[
     {
