@@ -423,7 +423,432 @@
             ["t4ll","t5l","t4l",{"liftCoef":145, "stallAngle":2}],
             {"group":""},
     ],
-}
+},
+"pag_tailcone_bc": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"BC Tailcone",
+        "value":900,
+    }
+    "slotType" : "pag_tailcone",
+    "slots": [
+        ["type", "default", "description"]
+        ["pag_licenseplate_R","pag_licenseplate_R", "Rear License Plate"],
+        ["pag_diffuser_R","", "Rear Diffuser"],
+    ],
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["pag_tailcone_bc", ["pag_tailcone"]],
+
+         {"deformGroup":"taillight_L_break", "deformMaterialBase":"pag_lights", "deformMaterialDamaged":"pag_lights_dmg"},
+         //["pag_taillight_L", ["pag_tailcone"],[]{"deformSound":"GlassBreakSound1", "deformVolume":0.5}],
+         {"deformGroup":"taillight_R_break", "deformMaterialBase":"pag_lights", "deformMaterialDamaged":"pag_lights_dmg"},
+         //["pag_taillight_R", ["pag_tailcone"],[]{"deformSound":"GlassBreakSound2", "deformVolume":0.5}],
+         {"deformGroup":""},
+    ],
+    "props": [
+        ["func"      , "mesh"              , "idRef:", "idX:", "idY:"            , "baseRotation"        , "rotation"                 , "translation"        , "min", "max", "offset", "multiplier"]
+        {
+            "lightInnerAngle":0
+            "lightOuterAngle":80
+            "lightBrightness":0.1
+            "lightRange":30
+            "lightColor":{"r":255, "g":255, "b":200, "a":255}
+            "lightAttenuation":{"x":0, "y":1, "z":1}
+            "lightCastShadows":false
+            "flareName":"vehicleReverseLightFlare"
+            "flareScale":0.2
+            "cookieName":"art/special/BNG_light_cookie_headlight.png"
+            "texSize":512
+            "shadowSoftness":0.5
+        }
+        //reverse lights
+        //taillights
+        {
+            "lightInnerAngle":0
+            "lightOuterAngle":140
+            "lightBrightness":0.06
+            "lightRange":20
+            "lightColor":{"r":255, "g":50, "b":0, "a":255}
+            "lightCastShadows":false
+            "flareName":"vehicleBrakeLightFlare"
+            "flareScale":0.2
+        }
+        //signals
+        {
+            "lightColor":{"r":255, "g":255, "b":0, "a":255}
+            "flareScale":0.1
+        }
+     ],
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         {"frictionCoef":0.8},
+         {"nodeMaterial":"|NM_PLASTIC"},
+         //--TAILCONE--
+         {"collision":true}
+         {"selfCollision":true},
+         {"group":"pag_tailcone"},
+         {"nodeWeight":0.85},
+         
+         
+         
+         
+         
+
+         {"nodeWeight":1.25},
+         ["t2rr", -0.75653, 2.09301, 0.76110],
+         ["t2r", -0.50435, 2.10301, 0.80110],
+         ["t2", 0.00000, 2.06301, 0.81110],
+         ["t2l", 0.50435, 2.10301, 0.80110],
+         ["t2ll", 0.75653, 2.09301, 0.76110],
+
+         ["t3rr", -0.79932, 2.02097, 0.53044],
+         ["t3r", -0.47000, 2.13946, 0.56000],
+         ["t3", 0.00000, 2.17886, 0.56000],
+         ["t3l", 0.47000, 2.13946, 0.56000],
+         ["t3ll", 0.79932, 2.02097, 0.53044],
+
+         {"nodeWeight":0.75},
+         ["t4rr", -0.79161, 2.01786, 0.23005],
+         ["t4r", -0.41000, 2.09336, 0.23005],
+         ["t4", 0.00000, 2.10336, 0.23005],
+         ["t4l", 0.41000, 2.09336, 0.23005],
+         ["t4ll", 0.79161, 2.01786, 0.23005],
+
+         ["t5rr", -0.94705, 1.79079, 0.16005],
+         ["t5r", -0.41000, 1.75079, 0.16005],
+         ["t5", 0.00000, 1.76079, 0.16005],
+         ["t5l", 0.41000, 1.75079, 0.16005],
+         ["t5ll", 0.94705, 1.79079, 0.16005],
+
+         ["t6rr", -1.01036, 1.79567, 0.50000],
+         ["t6ll", 1.01036, 1.79567, 0.50000],
+         {"group":""},
+    ],
+
+    "beams": [
+          ["id1:", "id2:"],
+          //--TAILCONE--
+          {"beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"beamSpring":501000,"beamDamp":100},
+          {"beamDeform":48440,"beamStrength":"FLT_MAX"},
+          //tailcone main shape
+          {"deformGroup":"taillight_R_break","deformationTriggerRatio":0.1},
+          
+          ["t2rr","t2r"],
+          ["t3rr","t3r"],
+          ["t4rr","t4r"],
+          {"deformGroup":"taillight_L_break"},
+          
+          ["t2ll","t2l"],
+          ["t3ll","t3l"],
+          ["t4ll","t4l"],
+          {"deformGroup":""},
+
+          
+          
+          ["t2r","t2"],
+          ["t2l","t2"],
+          ["t3r","t3"],
+          ["t3l","t3"],
+          ["t4r","t4"],
+          ["t4l","t4"],
+          ["t5rr","t5r"],
+          ["t5r","t5"],
+          ["t5l","t5"],
+          ["t5ll","t5l"],
+
+          //length/vertical
+          {"deformGroup":"taillight_R_break"},
+          
+          ["t2rr","t3rr"],
+          ["t3rr","t4rr"],
+          
+          ["t5rr","t6rr"],
+          ["t6rr","t3rr"],
+          {"deformGroup":"taillight_L_break"},
+          
+          ["t2ll","t3ll"],
+          ["t3ll","t4ll"],
+          
+
+          ["t5ll","t6ll"],
+          ["t6ll","t3ll"],
+            ["t6ll", "t2rr"],
+            ["t6rr", "t2ll"],
+            ["t6ll", "t2"],
+            ["t2", "t6rr"],
+
+
+          {"deformGroup":""},
+
+          
+          
+          
+          ["t2r","t3r"],
+          ["t2","t3"],
+          ["t2l","t3l"],
+          ["t3r","t4r"],
+          ["t3","t4"],
+          ["t3l","t4l"],
+          ["t4rr","t5rr"],
+          ["t4r","t5r"],
+          ["t4","t5"],
+          ["t4l","t5l"],
+          ["t4ll","t5ll"],
+
+          //cross
+          {"beamDeform":7560,"beamStrength":49840},
+          {"deformGroup":"taillight_R_break"},
+          
+          
+          ["t2rr","t3r"],
+          ["t2r","t3rr"],
+          ["t3rr","t4r"],
+          ["t3r","t4rr"],
+          ["t4rr","t6rr"],
+          ["t2rr","t6rr"],
+          
+          {"deformGroup":"taillight_L_break"},
+          
+          
+          ["t2l","t3ll"],
+          ["t2ll","t3l"],
+          ["t3l","t4ll"],
+          ["t3ll","t4l"],
+          ["t4ll","t6ll"],
+          ["t2ll","t6ll"],
+          
+          {"deformGroup":""},
+
+          
+          
+          
+          
+          ["t2r","t3"],
+          ["t2","t3r"],
+          ["t2","t3l"],
+          ["t2l","t3"],
+          ["t3r","t4"],
+          ["t3","t4r"],
+          ["t3","t4l"],
+          ["t3l","t4"],
+          ["t4rr","t5r"],
+          ["t4r","t5rr"],
+          ["t4r","t5"],
+          ["t4","t5r"],
+          ["t4","t5l"],
+          ["t4l","t5"],
+          ["t4l","t5ll"],
+          ["t4ll","t5l"],
+          ["t3rr","t5rr"],
+          ["t3ll","t5ll"],
+
+          //rigids widthwise
+          {"beamSpring":301000,"beamDamp":100},
+          {"beamDeform":4760,"beamStrength":49840},
+          {"deformGroup":"taillight_R_break"},
+          
+          ["t2rr","t2"],
+          ["t3rr","t3"],
+          ["t4rr","t4"],
+          {"deformGroup":"taillight_L_break"},
+          
+          ["t2ll","t2"],
+          ["t3ll","t3"],
+          ["t4ll","t4"],
+          {"deformGroup":""},
+
+          
+          ["t2r","t2l"],
+          ["t3r","t3l"],
+          ["t4r","t4l"],
+          ["t5rr","t5"],
+          ["t5r","t5l"],
+          ["t5ll","t5"],
+
+          //vert/length
+          {"deformGroup":"taillight_R_break"},
+          
+          
+          ["t2rr","t4rr"],
+          ["t2r","t4r"],
+          {"deformGroup":"taillight_L_break"},
+          
+          
+          ["t2l","t4l"],
+          ["t2ll","t4ll"],
+          {"deformGroup":""},
+
+          
+          
+          
+          
+          
+          
+          ["t2","t4"],
+
+          //corner
+          {"deformGroup":"taillight_R_break"},
+          
+          {"deformGroup":"taillight_L_break"},
+          
+          {"deformGroup":""},
+
+          ["t5r","t6rr"],
+          ["t5l","t6ll"],
+
+          //weak rigidy things
+          {"beamSpring":201000,"beamDamp":100},
+          
+          
+          
+
+          //attach
+          {"beamSpring":401000,"beamDamp":100},
+          {"beamDeform":7000,"beamStrength":23140},
+          {"breakGroup":"tailcone_R"},
+          {"deformGroup":"taillight_R_break", "deformationTriggerRatio":0.3},
+          //["t6rr","q10r"],
+          
+          //["t5rr","q12r"],
+          //["t5rr","q13r"],
+            
+            
+            ["t3rr", "c5"],
+            ["t3r", "c5"],
+            ["t4rr", "c10"],
+            ["t4r", "c10"],
+
+          {"breakGroup":"tailcone_L"},
+          {"deformGroup":"taillight_L_break"},
+          //["t6ll","q10l"],
+          
+          //["t5ll","q12l"],
+          //["t5ll","q13l"],
+            
+            
+            ["t3ll", "c9"],
+            ["t3l", "c9"],
+            ["t4ll", "c13"],
+            ["t4l", "c13"],
+
+          {"deformGroup":""},
+
+          {"beamSpring":660800,"beamDamp":154.8},
+          {"breakGroup":"tailcone_M"},
+          
+          
+          
+          
+          
+            
+            ["t3", "c12"],
+            ["t4", "c6"],
+			["t5", "c6"],
+
+          {"beamSpring":360800,"beamDamp":154.8},
+          //["t5r","q13r"],
+          //["t5l","q13l"],
+          //["t5r","r3r"],
+          //["t5","r3"],
+          //["t5l","r3l"],
+		  
+		  
+		  ["t6rr","t1x9"],
+		  ["t6ll","t2x3"],
+          {"breakGroup":""},
+
+          //tailcone support beams
+          {"beamType":"|SUPPORT","beamLongBound":4},
+          {"beamSpring":801000,"beamDamp":120},
+          {"beamDeform":10080,"beamStrength":178000},
+          
+          
+          
+          
+          
+          ["t5r","c6r"],
+          ["t5","c6"],
+          ["t5l","c6l"],
+          //["t2rr","q10r"],
+          //["t2ll","q10l"],
+          //["t3rr","q10r"],
+          //["t3ll","q10l"],
+          //["t4rr","q13r"],
+          //["t4ll","q13l"],
+          //["t2r","p8r"],
+          //["t2l","p8l"],
+		  
+		  
+
+          //strong
+          {"beamDeform":19040,"beamStrength":178000},
+          //["t6rr","q9r"],
+          //["t6ll","q9l"],
+          //["t5rr","q12r"],
+          //["t5ll","q12l"],
+          
+          
+          //["t2rr","q5r"],
+          //["t2ll","q5l"],
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+    ],
+    "triangles": [
+            ["id1:","id2:","id3:"],
+            //tailcone
+            {"groundModel":"plastic"},
+            {"dragCoef":8},
+            {"group":"tailcone"},
+            //["t2rr","t1rr","t2r"],
+            //["t1rr","t1r","t2r"],
+            //["t2r","t1r","t2"],
+            //["t1r","t1","t2"],
+            //["t2l","t2","t1l"],
+            //["t1l","t2","t1"],
+            //["t2ll","t2l","t1ll"],
+            //["t1ll","t2l","t1l"],
+
+            ["t3rr","t2rr","t3r"],
+            ["t2rr","t2r","t3r"],
+            ["t3r","t2r","t3"],
+            ["t2r","t2","t3"],
+            ["t3l","t3","t2l"],
+            ["t2l","t3","t2"],
+            ["t3ll","t3l","t2ll"],
+            ["t2ll","t3l","t2l"],
+
+            ["t4rr","t3rr","t4r"],
+            ["t3rr","t3r","t4r"],
+            ["t4r","t3r","t4"],
+            ["t3r","t3","t4"],
+            ["t4l","t4","t3l"],
+            ["t3l","t4","t3"],
+            ["t4ll","t4l","t3ll"],
+            ["t3ll","t4l","t3l"],
+
+            //["t1ll","t3ll","t2ll"],
+            //["t1ll","t6ll","t3ll"],
+            ["t6ll","t4ll","t3ll"],
+            ["t6ll","t5ll","t4ll"],
+
+            //["t2rr","t3rr","t1rr"],
+            //["t3rr","t6rr","t1rr"],
+            ["t3rr","t4rr","t6rr"],
+            ["t4rr","t5rr","t6rr"],
+
+           {"dragCoef":17.5},	
+            ["t5rr","t4rr","t5r",{"liftCoef":145, "stallAngle":2}],
+            ["t4rr","t4r","t5r",{"liftCoef":145, "stallAngle":2}],
+            ["t5r","t4r","t5",{"liftCoef":145, "stallAngle":2}],
+            ["t4r","t4","t5",{"liftCoef":145, "stallAngle":2}],
+            ["t5l","t5","t4l",{"liftCoef":145, "stallAngle":2}],
+            ["t4l","t5","t4",{"liftCoef":145, "stallAngle":2}],
+            ["t5ll","t5l","t4ll",{"liftCoef":145, "stallAngle":2}],
+            ["t4ll","t5l","t4l",{"liftCoef":145, "stallAngle":2}],
+            {"group":""},
+    ],
+},
 "pag_diffuser_R": {
     "information":{
         "authors":"BeamNG",

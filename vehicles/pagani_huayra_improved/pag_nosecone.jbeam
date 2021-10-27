@@ -421,4 +421,426 @@
             {"group":""},
     ],
 }
+"pag_nosecone_bc": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"BC Nosecone",
+        "value":800,
+    }
+    "slotType" : "pag_nosecone",
+    "slots": [
+        ["type", "default", "description"]
+        ["pag_licenseplate_F","", "Front License Plate"],
+    ],
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["pag_nosecone_bc", ["pag_nosecone"]],
+
+         {"deformGroup":"noselight_R_break", "deformMaterialBase":"pag_lights", "deformMaterialDamaged":"pag_lights_dmg"},
+         //["pag_noselight_R", ["pag_nosecone"],[]{"deformSound":"GlassBreakSound1", "deformVolume":0.4}],
+         {"deformGroup":"noselight_L_break", "deformMaterialBase":"pag_lights", "deformMaterialDamaged":"pag_lights_dmg"},
+         //["pag_noselight_L", ["pag_nosecone"],[]{"deformSound":"GlassBreakSound2", "deformVolume":0.4}],
+         {"deformGroup":""},
+    ],
+    "props": [
+        ["func"      , "mesh"              , "idRef:", "idX:", "idY:"            , "baseRotation"        , "rotation"                 , "translation"        , "min", "max", "offset", "multiplier"]
+        {
+            "lightInnerAngle":0
+            "lightOuterAngle":150
+            "lightBrightness":0.06
+            "lightRange":25
+            "lightColor":{"r":255, "g":255, "b":0, "a":255}
+            "lightAttenuation":{"x":0, "y":1, "z":1}
+            "lightCastShadows":false
+            "flareName":"vehicleBrakeLightFlare"
+            "flareScale":0.0
+            "cookieName":"art/special/BNG_light_cookie_headlight.png"
+            "texSize":512
+            "shadowSoftness":0.1
+        }
+        //bumper signals
+        //foglights
+        {
+            "lightInnerAngle":0
+            "lightOuterAngle":120
+            "lightBrightness":0.2
+            "lightRange":70
+            "lightColor":{"r":255, "g":255, "b":235, "a":255}
+            "lightAttenuation":{"x":0, "y":1, "z":1}
+            "lightCastShadows":false
+            "flareName":"vehicleHeadLightFlare"
+            "flareScale":0.0
+            "cookieName":"art/special/BNG_light_cookie_headlight.png"
+            "texSize":512
+            "shadowSoftness":0.4
+        }
+    ],
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         {"frictionCoef":0.8},
+         {"nodeMaterial":"|NM_PLASTIC"},
+         //--NOSECONE--
+         {"collision":true}
+         {"selfCollision":true},
+         {"group":"pag_nosecone"},
+         {"nodeWeight":0.72},
+         ["n1rr", -0.96503, -1.71533, 0.53817],
+         ["n1r", -0.50000, -2.21252, 0.52178],
+         ["n1", 0.00000, -2.33590, 0.53883],
+         ["n1l", 0.50000, -2.21252, 0.52178],
+         ["n1ll", 0.96503, -1.71533, 0.53817],
+
+         {"nodeWeight":0.72},
+         ["n2rr", -0.73597, -2.15957, 0.40683],
+         ["n2r", -0.47143, -2.29463, 0.43647],
+         ["n2", 0.00000, -2.43033, 0.46607],
+         ["n2l", 0.47143, -2.29463, 0.43647],
+         ["n2ll", 0.73597, -2.15957, 0.40683],
+
+         ["n3rr", -0.80787, -2.02140, 0.19357],
+         ["n3r", -0.43000, -2.11670, 0.18068],
+         ["n3", 0.00000, -2.32477, 0.18440],
+         ["n3l", 0.43000, -2.11670, 0.18068],
+         ["n3ll", 0.80787, -2.02140, 0.19357],
+
+         {"nodeWeight":0.72},
+         ["n4rr", -0.78237, -2.13593, 0.12835],
+         ["n4r", -0.43000, -2.32254, 0.13135],
+         ["n4", 0.00000, -2.44240, 0.13910],
+         ["n4l", 0.43000, -2.32254, 0.13135],
+         ["n4ll", 0.78237, -2.13593, 0.12835],
+
+         ["n5rr", -0.89180, -1.73887, 0.14123], 
+         ["n5r", -0.51232, -1.89387, 0.13135],
+         ["n5", 0.00000, -2.06757, 0.11556],
+         ["n5l", 0.51232, -1.89387, 0.13135],
+         ["n5ll", 0.89180, -1.73887, 0.14123],
+
+         ["n6rr", -0.95090, -1.77367, 0.34803],
+         ["n6ll", 0.95090, -1.77367, 0.34803],
+         {"group":""},
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          //--NOSECONE--
+          {"beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"beamSpring":501000,"beamDamp":100},
+          {"beamDeform":48440,"beamStrength":"FLT_MAX"},
+          //nosecone main shape
+          {"deformGroup":"noselight_R_break","deformationTriggerRatio":0.03},
+          ["n1rr","n1r"],
+          ["n2rr","n2r"],
+          ["n3rr","n3r"],
+          ["n4rr","n4r"],
+          ["n5rr","n5r"],
+          {"deformGroup":"noselight_L_break"},
+          ["n1ll","n1l"],
+          ["n2ll","n2l"],
+          ["n3ll","n3l"],
+          ["n4ll","n4l"],
+          ["n5ll","n5l"],
+          {"deformGroup":""},
+
+          ["n1r","n1"],
+          ["n1l","n1"],
+          ["n2r","n2"],
+          ["n2l","n2"],
+          ["n3r","n3"],
+          ["n3l","n3"],
+          ["n4r","n4"],
+          ["n4l","n4"],
+          ["n5r","n5"],
+          ["n5l","n5"],
+
+          //length/vertical
+          {"deformGroup":"noselight_R_break"},
+          ["n1rr","n2rr"],
+          ["n1r","n2r"],
+          ["n2rr","n3rr"],
+          ["n2r","n3r"],
+          ["n3rr","n4rr"],
+          ["n3r","n4r"],
+          ["n4rr","n5rr"],
+          ["n4r","n5r"],
+          ["n1rr","n6rr"],
+          ["n5rr","n6rr"],
+          ["n6rr","n3rr"],
+
+          {"deformGroup":"noselight_L_break"},
+          ["n1l","n2l"],
+          ["n1ll","n2ll"],
+          ["n2l","n3l"],
+          ["n2ll","n3ll"],
+          ["n3l","n4l"],
+          ["n3ll","n4ll"],
+          ["n4l","n5l"],
+          ["n4ll","n5ll"],
+          ["n1ll","n6ll"],
+          ["n5ll","n6ll"],
+          ["n6ll","n3ll"],
+          {"deformGroup":""},
+
+          ["n1","n2"],
+          ["n2","n3"],
+          ["n3","n4"],
+          ["n4","n5"],
+
+          //cross
+          {"beamDeform":7560,"beamStrength":49840},
+          {"deformGroup":"noselight_R_break"},
+          ["n1rr","n2r"],
+          ["n1r","n2rr"],
+          ["n2rr","n3r"],
+          ["n2r","n3rr"],
+          ["n3rr","n4r"],
+          ["n3r","n4rr"],
+          ["n4rr","n5r"],
+          ["n4r","n5rr"],
+          ["n4rr","n6rr"],
+          ["n3rr","n5rr"],
+          ["n2rr","n6rr"],
+          ["n1rr","n3rr"],
+          {"deformGroup":"noselight_L_break"},
+          ["n1l","n2ll"],
+          ["n1ll","n2l"],
+          ["n2l","n3ll"],
+          ["n2ll","n3l"],
+          ["n3l","n4ll"],
+          ["n3ll","n4l"],
+          ["n4l","n5ll"],
+          ["n4ll","n5l"],
+          ["n4ll","n6ll"],
+          ["n3ll","n5ll"],
+          ["n2ll","n6ll"],
+          ["n1ll","n3ll"],
+          {"deformGroup":""},
+
+          ["n1r","n2"],
+          ["n1","n2r"],
+          ["n1","n2l"],
+          ["n1l","n2"],
+          ["n2r","n3"],
+          ["n2","n3r"],
+          ["n2","n3l"],
+          ["n2l","n3"],
+          ["n3r","n4"],
+          ["n3","n4r"],
+          ["n3","n4l"],
+          ["n3l","n4"],
+          ["n4r","n5"],
+          ["n4","n5r"],
+          ["n4","n5l"],
+          ["n4l","n5"],
+
+          //rigids widthwise
+          {"beamSpring":301000,"beamDamp":100},
+          {"beamDeform":4760,"beamStrength":49840},
+          {"deformGroup":"noselight_R_break"},
+          ["n2rr","n2"],
+          ["n3rr","n3"],
+          ["n4rr","n4"],
+          {"deformGroup":"noselight_L_break"},
+          ["n2ll","n2"],
+          ["n3ll","n3"],
+          ["n4ll","n4"],
+          {"deformGroup":""},
+
+          ["n1rr","n1"],
+          ["n1r","n1l"],
+          ["n1ll","n1"],
+          ["n2r","n2l"],
+          ["n3r","n3l"],
+          ["n4r","n4l"],
+          ["n5rr","n5"],
+          ["n5r","n5l"],
+          ["n5ll","n5"],
+
+          //vert/length
+          {"deformGroup":"noselight_R_break"},
+          ["n2rr","n4rr"],
+          ["n2r","n4r"],
+          {"deformGroup":"noselight_L_break"},
+          ["n2ll","n4ll"],
+          ["n2l","n4l"],
+          {"deformGroup":""},
+
+          ["n1r","n3r"],
+          ["n1","n3"],
+          ["n1l","n3l"],
+          ["n1rr","n5rr"],
+          ["n1ll","n5ll"],
+          ["n1rr","n4rr"],
+          ["n1r","n4r"],
+          ["n1","n4"],
+          ["n1l","n4l"],
+          ["n1ll","n4ll"],
+          ["n2","n4"],
+
+          //corner
+          {"deformGroup":"noselight_R_break"},
+          ["n5r","n6rr"],
+          {"deformGroup":"noselight_L_break"},
+          ["n5l","n6ll"],
+          {"deformGroup":""},
+
+          ["n6rr","n1r"],
+          ["n6ll","n1l"],
+
+          //weak rigidy things
+          {"beamSpring":201000,"beamDamp":100},
+          ["n1r","n5r"],
+          ["n1","n5"],
+          ["n1l","n5l"],
+
+          //attach
+          {"beamSpring":401000,"beamDamp":100},
+          {"beamDeform":5040,"beamStrength":10680},
+          {"deformGroup":"noselight_R_break","deformationTriggerRatio":0.3},
+          {"breakGroup":"nosecone_R"},
+          ["n1rr","f4rr"],
+          ["n5rr","f6rr"],
+          ["n1r","f4rr"],
+          ["n5r","f6rr"],
+          ["n2rr","f4rr"],
+          ["n4rr","f6rr"],
+
+          {"deformGroup":"noselight_L_break"},
+          {"breakGroup":"nosecone_L"},
+          ["n1ll","f4ll"],
+          ["n5ll","f6ll"],
+          ["n1l","f4ll"],
+          ["n5l","f6ll"],
+          ["n2ll","f4ll"],
+          ["n4ll","f6ll"],
+
+          {"deformGroup":""},
+          {"breakGroup":"nosecone_M"},
+          ["n1","f4r"],
+          ["n1","f4"],
+          ["n1","f4l"],
+          ["n5","f6r"],
+          ["n5","f6"],
+          ["n5","f6l"],
+          ["n1r","f4r"],
+          ["n5r","f6r"],
+          ["n1l","f4l"],
+          ["n5l","f6l"],
+
+          ["n2","f4r"],
+          ["n2","f4"],
+          ["n2","f4l"],
+          ["n4","f6r"],
+          ["n4","f6"],
+          ["n4","f6l"],
+
+          {"breakGroup":""},
+
+          //nosecone support beams
+          {"beamType":"|SUPPORT","beamLongBound":2},
+          {"beamSpring":601000,"beamDamp":100},
+          {"beamDeform":7840,"beamStrength":178000},
+          ["n5rr","f5rr"],
+          ["n5r","c1r"],
+          ["n5","c1"],
+          ["n5l","c1l"],
+          ["n5ll","f5ll"],
+
+          ["n5rr","f4rr"],
+          ["n5r","f4r"],
+          ["n5","f4"],
+          ["n5l","f4l"],
+          ["n5ll","f4ll"],
+
+          ["n6rr","f6r"],
+          ["n6ll","f6l"],
+
+          ["n2r","f4r"],
+          ["n2","f4"],
+          ["n2l","f4l"],
+
+          ["n3r","f6r"],
+          ["n3","f6"],
+          ["n3l","f6l"],
+
+          ["n2rr","f6rr"],
+          ["n2r","f6r"],
+          ["n2","f6"],
+          ["n2l","f6l"],
+          ["n2ll","f6ll"],
+
+          ["n1rr","f4r"],
+          ["n1ll","f4l"],
+          ["n5rr","f6r"],
+          ["n5ll","f6l"],
+
+          //strong
+          {"beamDeform":14560,"beamStrength":178000},
+          ["n1rr","f3rr"],
+          ["n1r","f3r"],
+          ["n1r","c7r"],
+          ["n1","c7"],
+          ["n1l","c7l"],
+          ["n1l","f3l"],
+          ["n1ll","f3ll"],
+
+          ["n2rr","f4rr"],
+          ["n2ll","f4ll"],
+          ["n3rr","f6rr"],
+          ["n3ll","f6ll"],
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+    ],
+    "triangles": [
+            ["id1:","id2:","id3:"],
+            //nosecone
+            {"groundModel":"plastic"},
+            {"dragCoef":7},
+            {"group":"nosecone"},
+            ["n1rr","n2rr","n2r"{"liftCoef":72}],
+            ["n1rr","n2r","n1r"{"liftCoef":72}],
+            ["n1r","n2r","n2"{"liftCoef":72}],
+            ["n1r","n2","n1"{"liftCoef":72}],
+            ["n1l","n2","n2l"{"liftCoef":72}],
+            ["n1l","n1","n2"{"liftCoef":72}],
+            ["n1ll","n2l","n2ll"{"liftCoef":72}],
+            ["n1ll","n1l","n2l"{"liftCoef":72}],
+
+            ["n2rr","n3rr","n3r"],
+            ["n2rr","n3r","n2r"],
+            ["n2r","n3r","n3"],
+            ["n2r","n3","n2"],
+            ["n2l","n3","n3l"],
+            ["n2l","n2","n3"],
+            ["n2ll","n3l","n3ll"],
+            ["n2ll","n2l","n3l"],
+
+            ["n3rr","n4rr","n4r"],
+            ["n3rr","n4r","n3r"],
+            ["n3r","n4r","n4"],
+            ["n3r","n4","n3"],
+            ["n3l","n4","n4l"],
+            ["n3l","n3","n4"],
+            ["n3ll","n4l","n4ll"],
+            ["n3ll","n3l","n4l"],
+
+            ["n4rr","n5rr","n5r"],
+            ["n4rr","n5r","n4r"],
+            ["n4r","n5r","n5"],
+            ["n4r","n5","n4"],
+            ["n4l","n5","n5l"],
+            ["n4l","n4","n5"],
+            ["n4ll","n5l","n5ll"],
+            ["n4ll","n4l","n5l"],
+
+            ["n1ll","n2ll","n3ll"],
+            ["n1ll","n3ll","n6ll"],
+            ["n6ll","n3ll","n4ll"],
+            ["n6ll","n4ll","n5ll"],
+
+            ["n2rr","n1rr","n3rr"],
+            ["n3rr","n1rr","n6rr"],
+            ["n3rr","n6rr","n4rr"],
+            ["n4rr","n6rr","n5rr"],
+            {"group":""},
+    ],
+}
 }

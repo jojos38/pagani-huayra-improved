@@ -57,7 +57,7 @@
           {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1, "beamShortBound":1},
           {"disableMeshBreaking":true,"disableTriangleBreaking":true},
           //fuel tank beams
-          {"beamSpring":80800,"beamDamp":200},
+          {"beamSpring":100800,"beamDamp":100},
           {"beamDeform":3360,"beamStrength":42720},
           
           //connect fuel particles to tank
