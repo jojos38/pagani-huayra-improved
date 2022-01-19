@@ -20,10 +20,27 @@
     
     "controller": [
         ["fileName"],
-        ["vehicleController", {}],
-
+        ["vehicleController", {}],  
+		["lift"],
+        ["pneumatics", {"name":"airbags"}],
 	 ],
 	 
+	"airbags": {
+        "pressureLevels":[
+            ["name", "pressure"],
+            ["minPressure", 0],
+            ["maxPressure", 50],
+        ],
+        "increaseRate": 20,
+        "decreaseRate": 40,
+        "pressuredBeams":"airbagBeamData",
+        "groupSounds": "airbagBeamSoundData",
+     },
+	"airbagBeamSoundData":[
+        ["groupName", "soundUp", "soundDown", "volumeUp", "volumeDown"],
+        ["leftAxle", "event:>Vehicle>Pneumatics>Suspension_Up", "event:>Vehicle>Pneumatics>Suspension_Down", 0.01, 0.01],
+        ["rightAxle", "event:>Vehicle>Pneumatics>Suspension_Up", "event:>Vehicle>Pneumatics>Suspension_Down", 0.01, 0.01],
+    ],
     "props": [
         ["func", "mesh", "idRef:", "idX:", "idY:", "baseRotation", "rotation", "translation", "min", "max", "offset", "multiplier"]
         {
