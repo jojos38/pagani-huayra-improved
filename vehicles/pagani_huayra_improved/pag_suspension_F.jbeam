@@ -462,7 +462,7 @@
           {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
 		  //--PRESSURED BEAM AIRBAGS--
           {"beamPrecompression":1, "beamType":"|PRESSURED"},
-          {"beamSpring":100,"beamDamp":0,"beamDeform":100000,"beamStrength":250000},
+          {"beamSpring":0,"beamDamp":0,"beamDeform":1000,"beamStrength":25000},
           {"beamLimitSpring":0,"beamLimitDamp":0},
           {"breakGroup":"airbag_F_break"},
           {"breakGroupType":1},
