@@ -364,6 +364,8 @@
           ["fa1r","fs2r"{"beamLimitDampRebound":0,"dampCutoffHz":500}],
           ["fa1l","fs2l"{"beamLimitDampRebound":0,"dampCutoffHz":500}],
           {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+		  
+		  
     ],
 }
 "pag_coilover_F_sport": {
@@ -423,6 +425,11 @@
         ["$damp_bump_F", "range", "N/m/s", "Suspension", 15000, 500, 20000, "Bump Damping", "Damper rate in compression", {"stepDis":100, "subCategory":"Front"}]
         ["$damp_rebound_F", "range", "N/m/s", "Suspension", 30000, 500, 35000, "Rebound Damping", "Damper rate in extension", {"stepDis":100, "subCategory":"Front"}]
     ],
+	"airbagBeamData": [
+            ["beamName", "groupName"],
+            ["airbag_FL", "leftAxle"],
+            ["airbag_FR", "rightAxle"],
+    ],
     "beams": [
           ["id1:", "id2:"],
           //front springs
@@ -453,6 +460,15 @@
           ["fa1r","fs2r"{"longBoundRange":0.04,"shortBoundRange":0.05,"boundZone":0.02,"beamLimitDampRebound":0,"dampCutoffHz":500}],
           ["fa1l","fs2l"{"longBoundRange":0.04,"shortBoundRange":0.05,"boundZone":0.02,"beamLimitDampRebound":0,"dampCutoffHz":500}],
           {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+		  //--PRESSURED BEAM AIRBAGS--
+          {"beamPrecompression":1, "beamType":"|PRESSURED"},
+          {"beamSpring":100,"beamDamp":0,"beamDeform":100000,"beamStrength":250000},
+          {"beamLimitSpring":0,"beamLimitDamp":0},
+          {"breakGroup":"airbag_F_break"},
+          {"breakGroupType":1},
+          ["fa1l","fs2l", {"pressurePSI":0,"surface":0.024,"volumeCoef":4,"name":"airbag_FL","soundFile":"event:>Vehicle>Suspension>bus_01>spring_compress_01","colorFactor":0.5,"attackFactor":10,"volumeFactor":2.5,"decayFactor":2.0,"pitchFactor":0.5,"maxStress":10}],
+          ["fa1r","fs2r", {"pressurePSI":0,"surface":0.024,"volumeCoef":4,"name":"airbag_FR","soundFile":"event:>Vehicle>Suspension>bus_01>spring_compress_01","colorFactor":0.5,"attackFactor":10,"volumeFactor":2.5,"decayFactor":2.0,"pitchFactor":0.5,"maxStress":10}],
+          {"breakGroupType":0},
     ],
 }
 "pag_swaybar_F": {
