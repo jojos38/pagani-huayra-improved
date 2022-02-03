@@ -278,7 +278,7 @@
 		"hissVolumePerPSI": 0.50,
 		"bovEnabled": true,
 		"bovSoundFileName": "event:>Vehicle>Forced_Induction>Turbo_03>turbo_bov_race",
-		"bovSoundVolumeCoef": 15.0,
+		"bovSoundVolumeCoef": 1.0,
 		"bovOpenThreshold": 0.05,
 		"bovOpenChangeThreshold": 0.5,
 		//"flutterSoundFileName":"event:>Vehicle>Forced_Induction>Turbo_02>turbo_bov",
