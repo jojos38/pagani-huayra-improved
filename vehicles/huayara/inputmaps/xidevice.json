@@ -1,0 +1,13 @@
+{
+"bindings" :   [
+    {
+    "control"           : "upov"             ,
+    "action"            : "toggle_lift"
+    },
+  ],
+"name"              : "XBox Controller 1" ,
+"version"           : 1                   ,
+"devicetype"        : "xinput"            ,
+"vidpid"            : "XIDevice"          ,
+"guid"              : "xinput_device_XIDevice"
+},

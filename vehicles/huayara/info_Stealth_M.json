@@ -1,0 +1,14 @@
+{
+"Config Type":"Service",
+"Performance Class":"9",
+"Drivetrain":"AWD",
+"Body Style":"Coupe",
+"Value":1300000,
+"Description":"A stealth configuration, perfect to hide in the dark",
+"Configuration":"Stealth (M)",
+"Induction Type":"NA",
+"default_color":"Brilliance",
+"Propulsion":"ICE",
+"Transmission":"Manual",
+"Fuel Type":"Gasoline"
+}

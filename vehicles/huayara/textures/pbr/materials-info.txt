@@ -1,0 +1,33 @@
+...
+
+    "class": "material",
+    "persistentId": "960ea7b2-0c50-45a1-b51a-7ec214260ee4",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "vehicles/huayara/textures/pbr/paint_ao.png",
+        "baseColorMap": "vehicles/huayara/textures/pbr/paint_b.png",
+        "metallicFactor": 1,
+        "metallicMap": "vehicles/huayara/textures/pbr/paint_m.png",
+        "normalMap": "vehicles/huayara/null_n.png",
+        "roughnessMap": "/vehicles/huayara/textures/pbr/paint_r.png"
+      },
+      {
+        "ambientOcclusionMap": "vehicles/huayara/textures/pbr/paint_ao.png",
+        "clearCoatFactor": 1,
+        "clearCoatMap": "vehicles/huayara/textures/pbr/paint_cc.png",
+        "colorPaletteMap": "vehicles/huayara/textures/pbr/paint_p.png",
+        "colorPaletteMapUseUV": 1,
+        "instanceDiffuse": true,
+        "metallicFactor": 1,
+        "normalMap": "vehicles/huayara/null_n.png",
+        "opacityMap": "vehicles/huayara/textures/pbr/paint_c.png"
+      },
+      {},
+      {}
+    ],
+    "activeLayers": 2,
+    "doubleSided": true,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "version": 1.5

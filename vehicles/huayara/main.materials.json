@@ -1,0 +1,268 @@
+{
+  "Defensa_1": {
+    "name": "Defensa_1",
+    "mapTo": "Defensa.1",
+    "class": "Material",
+    "persistentId": "52116991-ee7f-4685-a72c-c2521b8777f6",
+    "Stages": [
+      {
+        "diffuseColor": [
+          0.501960814,
+          0.501960814,
+          0.501960814,
+          1
+        ]
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "GENERIC_LCD": {
+    "name": "GENERIC_LCD",
+    "mapTo": "GENERIC_LCD",
+    "class": "Material",
+    "persistentId": "94eaad46-dfb2-4151-b399-96e15230ed61",
+    "Stages": [
+      {
+        "colorMap": "/vehicles/huayara/lcd.dds",
+        "detailScale": [
+          1,
+          1
+        ],
+        "emissive": true
+      },
+      {},
+      {},
+      {}
+    ]
+  },
+  "Guardabarros_1": {
+    "name": "Guardabarros_1",
+    "mapTo": "Guardabarros.1",
+    "class": "Material",
+    "persistentId": "6ff68ef4-0f41-4d2a-a7e6-7b02bac9bdbd",
+    "Stages": [
+      {
+        "diffuseColor": [
+          0.800000012,
+          0.800000012,
+          0.800000012,
+          1
+        ]
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "PAG_HUAYRA_BADGES": {
+    "name": "PAG_HUAYRA_BADGES",
+    "mapTo": "PAG_HUAYRA_BADGES",
+    "class": "Material",
+    "persistentId": "6dac6ee4-5427-4322-9f3f-5c32f073694f",
+    "Stages": [
+      {
+        "diffuseColor": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "PAG_HUAYRA_MISC_SKIN": {
+    "name": "PAG_HUAYRA_MISC_SKIN",
+    "mapTo": "PAG_HUAYRA_MISC_SKIN",
+    "class": "Material",
+    "persistentId": "32f79d08-a239-4499-9634-eab00ba1b551",
+    "Stages": [
+      {
+        "diffuseColor": [
+          0.588,
+          0.588,
+          0.588,
+          1
+        ]
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "PAG_HUAYRA_WINDOWS_2": {
+    "name": "PAG_HUAYRA_WINDOWS_2",
+    "mapTo": "PAG_HUAYRA_WINDOWS_2",
+    "class": "material",
+    "persistentId": "8a4e27dd-86a3-4145-be82-c84275969dfd",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          1,
+          0.999989986,
+          0.999989986,
+          1
+        ],
+        "baseColorMap": "/vehicles/common/glass_base_2.dds",
+        "clearCoatFactor": 1,
+        "clearCoatRoughnessFactor": 0,
+        "detailMap": "/vehicles/common/glass_base_2.dds",
+        "detailScale": [
+          1,
+          1
+        ],
+        "opacityFactor": 0
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef": 0,
+    "dynamicCubemap": true,
+    "translucent": true,
+    "translucentBlendOp": "PreMulAlpha",
+    "translucentRecvShadows": true,
+    "version": 1.5
+  },
+  "bonnet_ok_0": {
+    "name": "bonnet_ok_0",
+    "mapTo": "bonnet_ok.0",
+    "class": "Material",
+    "persistentId": "e0254705-7f5a-428c-aeda-fd26c1c6f0ae",
+    "Stages": [
+      {},
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "bonnet_ok_1": {
+    "name": "bonnet_ok_1",
+    "mapTo": "bonnet_ok.1",
+    "class": "Material",
+    "persistentId": "86b52acc-9d0e-4908-9e8c-0964170f7442",
+    "Stages": [
+      {
+        "diffuseColor": [
+          0.800000012,
+          0.800000012,
+          0.800000012,
+          1
+        ]
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "bonnet_ok_2": {
+    "name": "bonnet_ok_2",
+    "mapTo": "bonnet_ok.2",
+    "class": "Material",
+    "persistentId": "63ddbd61-6c7b-4d43-9b94-b15f5907533c",
+    "Stages": [
+      {
+        "diffuseColor": [
+          0.800000012,
+          0.800000012,
+          0.800000012,
+          1
+        ]
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "door_lf_ok_3": {
+    "name": "door_lf_ok_3",
+    "mapTo": "door_lf_ok.3",
+    "class": "Material",
+    "persistentId": "745b2f4a-86af-43d6-b800-1ac0fc103ae8",
+    "Stages": [
+      {
+        "diffuseColor": [
+          0.800000012,
+          0.800000012,
+          0.800000012,
+          1
+        ]
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "pag_runninglight": {
+    "name": "pag_runninglight",
+    "mapTo": "pag_runninglight",
+    "class": "Material",
+    "persistentId": "9da9024b-de16-417b-881a-a1ea96d4d6d9",
+    "Stages": [
+      {
+        "diffuseColor": [
+          0.279856414,
+          0.640000284,
+          0.0348582007,
+          1
+        ]
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "secondary": {
+    "name": "secondary",
+    "mapTo": "secondary",
+    "class": "Material",
+    "persistentId": "747f5181-2537-41b6-bd72-ff40b6c6167f",
+    "Stages": [
+      {
+        "diffuseColor": [
+          1,
+          0,
+          0.686274529,
+          1
+        ]
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "wheels_1": {
+    "name": "wheels_1",
+    "mapTo": "wheels.1",
+    "class": "Material",
+    "persistentId": "65964227-7900-4b09-a8d7-c5e806a6ae05",
+    "Stages": [
+      {
+        "diffuseColor": [
+          0,
+          0.501960814,
+          1,
+          1
+        ]
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  }
+}

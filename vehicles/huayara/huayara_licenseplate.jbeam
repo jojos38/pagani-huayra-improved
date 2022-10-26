@@ -1,0 +1,26 @@
+{
+"pag_licenseplate_F": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Front License Plate",
+        "value":0,
+    }
+    "slotType" : "pag_licenseplate_F",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["front_plate", ["pag_nosecone"],[],{"pos":{"x":0.0, "y":-2.224, "z":0.442}, "rot":{"x":0, "y":0, "z":0}, "scale":{"x":1, "y":1, "z":1}}],
+    ],
+}
+"pag_licenseplate_R": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Rear License Plate",
+        "value":0,
+    }
+    "slotType" : "pag_licenseplate_R",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["pag_plate", ["pag_tailcone"],[],{"pos":{"x":0.0, "y":2.15278, "z":0.499719}, "rot":{"x":3, "y":0, "z":180}, "scale":{"x":1, "y":1, "z":1}}],
+    ],
+}
+}

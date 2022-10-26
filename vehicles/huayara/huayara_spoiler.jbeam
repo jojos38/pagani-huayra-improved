@@ -1,0 +1,334 @@
+{
+"pag_spoiler_RR": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Retractable Spoiler RR",
+        "value":900,
+    }
+    "slotType" : "pag_spoiler_RR",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["pag_spoiler_RR", ["pag_spoiler_RR"]],
+    ],
+    "controller": [
+        ["fileName"],
+        ["spoilerR", {}],
+    ],
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         //--SPOILER--
+         {"nodeMaterial":"|NM_METAL"},
+         {"frictionCoef":0.5},
+         {"group":"pag_spoiler_RR"},
+         {"collision":true}
+         {"selfCollision":true},
+         {"nodeWeight":1},
+         
+         ["sp1r", -0.57357, 1.86443, 0.84857],
+         ["sp1", -0.25024, 1.87443, 0.84857],
+         
+         
+
+         
+         ["sp2r", -0.57357, 2.00655, 0.79778],
+         ["sp2", -0.23439, 2.01443, 0.80724],
+         
+         
+         //rigidifier
+         {"group":""},
+         {"collision":false}
+         {"selfCollision":false},
+         ["sp3r", -0.56336, 1.89308, 1.00857],
+         
+
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          //--SPOILER--
+          {"beamSpring":1183050,"beamDamp":75},
+          {"beamDeform":36150,"beamStrength":"FLT_MAX"},
+          //main shape
+          
+          ["sp1r","sp1"],
+          
+          
+          
+          ["sp2r","sp2"],
+          
+          
+
+          
+          ["sp1r","sp2r"],
+          ["sp1","sp2"],
+          
+          
+
+          //surficial crossing
+          {"beamDeform":19500,"beamStrength":"FLT_MAX"},
+          
+          
+          ["sp1r","sp2"],
+          ["sp2r","sp1"],
+          
+          
+          
+          
+
+          //rigids
+          {"beamDeform":7200,"beamStrength":"FLT_MAX"},
+          
+          
+          
+          
+          
+          
+
+          //rigidifier
+          {"beamDeform":5550,"beamStrength":"FLT_MAX"},
+          {"beamSpring":1183050,"beamDamp":100},
+          
+
+          
+          ["sp1r","sp3r"],
+          ["sp1","sp3r"],
+          
+          
+          
+          ["sp2r","sp3r"],
+          ["sp2","sp3r"],
+          
+          
+
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          //hinge
+          {"beamSpring":1183050,"beamDamp":75},
+          {"beamDeform":5500,"beamStrength":10000},
+          {"breakGroup":"spoiler_hinge_RRR"},
+          //r
+          
+          
+          ["sp1r","t3x"],
+          ["sp2r","t3x"],
+          ["sp1","t3x"],
+          ["sp2","t3x"],
+          ["sp3r","t3x"],
+
+          {"breakGroup":"spoiler_hinge_RLR"},
+          //l
+            ["sp1r", "tg4r"],
+            ["sp2r", "tg4r"],
+            ["sp1", "tg4r"],
+            ["sp2", "tg4r"],
+            ["sp3r", "tg4r"],
+
+          
+          {"breakGroup":""},
+
+          //spoiler support beams
+          {"beamType":"|SUPPORT", "beamLongBound":6},
+          {"beamSpring":1183050,"beamDamp":75},
+          {"beamDeform":34500,"beamStrength":1250000},
+
+           ["sp1r","t4y"],
+           ["sp2r","t4y"],                         
+           ["sp1r","t1y"],
+           ["sp2","t1y"],         
+          
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+    ],
+    "triangles": [
+            ["id1:","id2:","id3:"],
+            //trunk
+            {"groundModel":"plastic"},
+            {"group":"pag_spoiler_RR"},
+            {"dragCoef":180}
+            ["sp1r","sp1","sp2",{"liftCoef":100, "stallAngle":0.25}],
+            ["sp1r","sp2","sp2r",{"liftCoef":100, "stallAngle":0.25}],
+            {"group":""},
+    ],
+    "hydros": [
+            ["id1:","id2:"],
+            {"beamDeform":55500,"beamStrength":145000},
+            {"beamSpring":1183050,"beamDamp":150},
+            {"breakGroupType":1},
+            {"breakGroup":["spoiler_hinge_RRR","spoiler_hinge_RLR"]},
+            {"deformGroup":"tailgateglass_break"}
+            ["sp3r","t4y",{"inputSource":"spoilerR","inLimit":0,"outLimit":1.55,"inRate":1,"outRate":1,"inputFactor":1}],
+            {"breakGroupType":0},
+            {"breakGroup":""},
+    ],
+}	
+"pag_spoiler_RL": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Retractable Spoiler RL",
+        "value":900,
+    }
+    "slotType" : "pag_spoiler_RL",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["pag_spoiler_RL", ["pag_spoiler_RL"]],
+    ],
+    "controller": [
+        ["fileName"],
+        ["spoilerL", {}],
+    ],
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         //--SPOILER--
+         {"nodeMaterial":"|NM_METAL"},
+         {"frictionCoef":0.5},
+         {"group":"pag_spoiler_RL"},
+         {"collision":true}
+         {"selfCollision":true},
+         {"nodeWeight":1},  
+         ["sp1l", 0.57357, 1.86443, 0.84857],
+         ["sp6", 0.25024, 1.87443, 0.84857],                 
+         ["sp2l", 0.57357, 2.00655, 0.79778],
+         ["sp7", 0.23439, 2.01443, 0.80724],
+         
+         //rigidifier
+         {"group":""},
+         {"collision":false}
+         {"selfCollision":false},
+         ["sp3l", 0.56336, 1.89308, 1.00857],
+         
+
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          //--SPOILER--
+          {"beamSpring":1183050,"beamDamp":75},
+          {"beamDeform":36150,"beamStrength":"FLT_MAX"},
+          //main shape
+          
+          ["sp1l","sp6"],
+          
+          
+          
+          ["sp2l","sp7"],
+          
+          
+
+          
+          ["sp1l","sp2l"],
+          ["sp6","sp7"],
+          
+          
+
+          //surficial crossing
+          {"beamDeform":19500,"beamStrength":"FLT_MAX"},
+          
+          
+          ["sp1l","sp7"],
+          ["sp2l","sp6"],
+          
+          
+          
+          
+
+          //rigids
+          {"beamDeform":7200,"beamStrength":"FLT_MAX"},
+          
+          
+          
+          
+          
+          
+
+          //rigidifier
+          {"beamDeform":5550,"beamStrength":"FLT_MAX"},
+          {"beamSpring":1183050,"beamDamp":100},
+          
+
+          
+          ["sp1l","sp3l"],
+          ["sp6","sp3l"],
+          
+          
+          
+          ["sp2l","sp3l"],
+          ["sp7","sp3l"],
+          
+          
+
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          //hinge
+          {"beamSpring":1183050,"beamDamp":75},
+          {"beamDeform":5500,"beamStrength":10000},
+          {"breakGroup":"spoiler_hinge_RRL"},
+          //r
+          
+          
+          ["sp1l","t7"],
+          ["sp2l","t7"],
+          ["sp6","t7"],
+          ["sp7","t7"],
+          ["sp3l","t7"],
+
+          {"breakGroup":"spoiler_hinge_RLL"},
+          //l
+            ["sp1l", "tg4l"],
+            ["sp2l", "tg4l"],
+            ["sp6", "tg4l"],
+            ["sp7", "tg4l"],
+            ["sp3l", "tg4l"],
+
+          
+          {"breakGroup":""},
+
+          //spoiler support beams
+          {"beamType":"|SUPPORT", "beamLongBound":6},
+          {"beamSpring":1183050,"beamDamp":75},
+          {"beamDeform":34500,"beamStrength":1250000},
+
+           ["sp1l","t5y"],
+           ["sp2l","t5y"],                         
+           ["sp1l","t3y"],
+           ["sp7","t3y"],         
+          
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+    ],
+    "triangles": [
+            ["id1:","id2:","id3:"],
+            //trunk
+            {"groundModel":"plastic"},
+            {"group":"pag_spoiler_RL"},
+            {"dragCoef":180}
+            ["sp1l","sp2l","sp7",{"liftCoef":100, "stallAngle":0.25}],
+            ["sp1l","sp7","sp6",{"liftCoef":100, "stallAngle":0.25}],
+            {"group":""},
+    ],
+    "hydros": [
+            ["id1:","id2:"],
+            {"beamDeform":55500,"beamStrength":145000},
+            {"beamSpring":1183050,"beamDamp":150},
+            {"breakGroupType":1},
+            {"breakGroup":["spoiler_hinge_RRL","spoiler_hinge_RLL"]},
+            {"deformGroup":"tailgateglass_break"}
+            ["sp3l","t5y",{"inputSource":"spoilerL","inLimit":0,"outLimit":1.55,"inRate":1,"outRate":1,"inputFactor":1}],
+            {"breakGroupType":0},
+            {"breakGroup":""},
+    ],		
+}
+}

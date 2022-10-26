@@ -1,0 +1,52 @@
+{
+"pag_radiator": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Radiator",
+        "value":250,
+    }
+    "slotType" : "pag_radiator",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["pag_radiator", ["pag_chassis"]],
+    ],
+    "mainEngine":{
+        "radiatorArea":0.3,
+        "radiatorEffectiveness":20000,
+        "coolantVolume":12,
+        "radiatorFanType":"electric",
+        "radiatorFanTemperature":100,
+        "radiatorFanMaxAirSpeed":4,
+        "thermostatTemperature":90
+    },
+    "beams": [
+          ["id1:", "id2:"],
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+    ],
+}
+"pag_radiator_race": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"High Performance Radiator",
+        "value":450,
+    }
+    "slotType" : "pag_radiator",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["pag_radiator", ["pag_chassis"]],
+    ],
+    "mainEngine":{
+        "radiatorArea":0.5,
+        "radiatorEffectiveness":30000,
+        "coolantVolume":5.5,
+        "radiatorFanType":"electric",
+        "radiatorFanTemperature":100,
+        "radiatorFanMaxAirSpeed":6,
+        "thermostatTemperature":90
+    },
+    "beams": [
+          ["id1:", "id2:"],
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+    ],
+}
+}
